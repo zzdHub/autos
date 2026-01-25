@@ -5,6 +5,8 @@ chcp 65001 > $null
 . "D:\a\autos\autos\ls\static.ps1"
 . "D:\a\autos\autos\ls\AreesSubs.ps1"
 $successSubs = @() 
+
+
 # 循环测试
 for ($i = 0; $i -lt $subs.Count; $i++) {
     Write-Host "test subs: $($i+1): $($subs[$i])" 
@@ -98,6 +100,7 @@ foreach ($out in $mainJson.outbounds) {
     }
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
+Write-Host "处理完成，生成文件"
 
 
 
