@@ -15,7 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: excute script hhh-ps1
+      - name: excute script auto-script-singbox
         run: |
            cd D:\a\autos\autos\ls
             powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
@@ -23,6 +23,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-json
-          path: D:\a\autos\autos\ls\merged_formatted.json
+          path: merged_formatted.json
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
