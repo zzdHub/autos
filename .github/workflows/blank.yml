@@ -15,4 +15,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: excute script hhh-ps1
+        run: |
+           cd D:\a\autos\autos
+            .\hhh.ps1
       - run: echo "🍏 This job's status is ${{ job.status }}."
