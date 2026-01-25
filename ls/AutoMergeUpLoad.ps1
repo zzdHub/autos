@@ -2,14 +2,14 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 chcp 65001 > $null
 # Load static resources...
-. "D:\Software\VPN\Convert\sub2sing-box_0.0.9_windows_amd64\static.ps1"
-. "D:\Software\VPN\Convert\sub2sing-box_0.0.9_windows_amd64\AreesSubs.ps1"
+. "D:\a\autos\autos\ls\static.ps1"
+. "D:\a\autos\autos\ls\AreesSubs.ps1"
 $successSubs = @() 
 # 循环测试
 for ($i = 0; $i -lt $subs.Count; $i++) {
     Write-Host "test subs: $($i+1): $($subs[$i])" 
     # 执行 sub2sing-box.exe，捕获所有输出
-    $output = & .\sub2sing-box.exe convert -s $subs[$i]
+    $output = & D:\a\autos\autos\ls .\sub2sing-box.exe convert -s $subs[$i]
     $exitCode = $LASTEXITCODE
     if ($exitCode -ne 0 -or $output -match "(?i)error|forbidden|invalid") {
         Write-Host "sub $($i+1) error" 
@@ -115,4 +115,5 @@ do {
         Write-Host "An error occurred during the upload process.：$($_)"
     }
 }while (-not $success)
+
 
