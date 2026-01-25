@@ -97,7 +97,8 @@ foreach ($out in $mainJson.outbounds) {
         }
     }
 }
-$mainJson | ConvertTo-Json -Depth 100 | Out-File .\merged_formatted.json -Encoding utf8
+$mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted.json -Encoding utf8
+
 
 
 
