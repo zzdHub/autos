@@ -1,7 +1,8 @@
-# 强制 PowerShell 输出 UTF-8
-[Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+# 脚本开始处添加
+[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
+$PSDefaultParameterValues['*:Encoding'] = 'utf8'
 
-chcp 65001 > $null
 # Load static resources...
 . "D:\a\autos\autos\ls\static.ps1"
 . "D:\a\autos\autos\ls\AreesSubs.ps1"
@@ -103,6 +104,7 @@ foreach ($out in $mainJson.outbounds) {
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
