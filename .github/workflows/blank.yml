@@ -26,6 +26,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-json
-          path: .\merged_formatted.json
+          path: D:\a\autos\autos\ls\merged_formatted.json
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
