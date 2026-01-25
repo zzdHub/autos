@@ -1,22 +1,16 @@
-# 最小化环境检测
-Write-Host "=== 环境信息 ==="
-Write-Host "PowerShell: $($PSVersionTable.PSVersion) [$($PSVersionTable.PSEdition)]"
-Write-Host "输出编码: $([Console]::OutputEncoding.EncodingName)"
-Write-Host "输入编码: $([Console]::InputEncoding.EncodingName)"
-Write-Host "代码页: $(chcp)"
-Write-Host "中文测试: ✅ 你好世界"
-
-# 你的原有脚本从这里开始
-$jsonPath = "D:\a\autos\autos\ls\UnFormattedConfig.json"
-
-if (!(Test-Path $jsonPath)) {
-    Write-Error "找不到文件 $jsonPath"
-    exit 1
+# 在 script.ps1 的最开头添加
+# 1. 如果 pwsh 存在，重新用 pwsh 执行当前脚本
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    if (Get-Command pwsh -ErrorAction SilentlyContinue) {
+        Write-Host "检测到 Windows PowerShell，切换到 PowerShell 7..."
+        pwsh -NoProfile -ExecutionPolicy Bypass -File $MyInvocation.MyCommand.Path @args
+        exit $LASTEXITCODE
+    }
 }
 
-$fileInfo = Get-Item $jsonPath
-$sizeMB = [Math]::Round($fileInfo.Length / 1MB, 2)
+# 2. 继续执行你的代码
+Write-Host "=== 当前 PowerShell 版本 ==="
+Write-Host "PowerShell: $($PSVersionTable.PSVersion) [$($PSVersionTable.PSEdition)]"
+Write-Host "中文测试: ✅ 你好世界"
 
-Write-Host "JSON 文件存在"
-Write-Host "文件大小: $sizeMB MB"
-Write-Host "its ok"
+# ... 你的其他代码
