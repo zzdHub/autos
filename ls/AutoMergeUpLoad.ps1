@@ -3,6 +3,9 @@
 [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 
+# 或者针对特定cmdlet
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
+$PSDefaultParameterValues['Get-Content:Encoding'] = 'utf8'
 # Load static resources...
 . "D:\a\autos\autos\ls\static.ps1"
 . "D:\a\autos\autos\ls\AreesSubs.ps1"
@@ -104,6 +107,7 @@ foreach ($out in $mainJson.outbounds) {
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
