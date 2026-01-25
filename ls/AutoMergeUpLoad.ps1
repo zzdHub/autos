@@ -9,7 +9,7 @@ $successSubs = @()
 for ($i = 0; $i -lt $subs.Count; $i++) {
     Write-Host "test subs: $($i+1): $($subs[$i])" 
     # 执行 sub2sing-box.exe，捕获所有输出
-    $output = & D:\a\autos\autos\ls .\sub2sing-box.exe convert -s $subs[$i]
+    $output = & .\sub2sing-box.exe convert -s $subs[$i]
     $exitCode = $LASTEXITCODE
     if ($exitCode -ne 0 -or $output -match "(?i)error|forbidden|invalid") {
         Write-Host "sub $($i+1) error" 
@@ -115,5 +115,6 @@ do {
         Write-Host "An error occurred during the upload process.：$($_)"
     }
 }while (-not $success)
+
 
 
