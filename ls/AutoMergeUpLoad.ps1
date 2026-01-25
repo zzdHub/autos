@@ -103,9 +103,10 @@ $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
 $filename = "merged_formatted_$timestamp.json"
 
 $mainJson | ConvertTo-Json -Depth 100 |
-    Out-File $filename -Encoding utf8
+    Out-File .\$filename -Encoding utf8
 
 # $mainJson | ConvertTo-Json -Depth 100 | Out-File .\merged_formatted.json -Encoding utf8
+
 
 
 
