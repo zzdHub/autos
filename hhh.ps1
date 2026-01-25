@@ -1,4 +1,7 @@
 
+# 在当前目录执行这个命令，它会修复编码问题
+$content = Get-Content "hhh.ps1" -Raw
+[System.IO.File]::WriteAllText("hhh.ps1", $content, [System.Text.Encoding]::UTF8)
 
 $jsonPath = "D:\a\autos\autos\ls\UnFormattedConfig.json"
 
