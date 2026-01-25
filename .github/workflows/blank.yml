@@ -18,7 +18,7 @@ jobs:
       - name: excute script hhh-ps1
         run: |
            cd D:\a\autos\autos
-            powershell -ExecutionPolicy Bypass -File .\hhh.ps1
+            powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
