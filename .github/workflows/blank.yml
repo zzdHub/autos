@@ -19,6 +19,9 @@ jobs:
         run: |
            cd D:\a\autos\autos\ls
             powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
+      - name: List files
+        run: dir
+        shell: cmd
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
