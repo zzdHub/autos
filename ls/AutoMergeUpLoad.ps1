@@ -1,5 +1,7 @@
 # 设置控制台和输出编码为 UTF-8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+
 chcp 65001 > $null
 # Load static resources...
 . "D:\a\autos\autos\ls\static.ps1"
@@ -101,6 +103,7 @@ foreach ($out in $mainJson.outbounds) {
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
