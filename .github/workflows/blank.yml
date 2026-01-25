@@ -27,7 +27,8 @@ jobs:
       - name: excute script auto-script-singbox
         run: |
            cd D:\a\autos\autos\ls
-            powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
+            powershell -ExecutionPolicy Bypass -File hhh.ps1
+            # powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
       - name: List files
         run: dir
         shell: cmd
