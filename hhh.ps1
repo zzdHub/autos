@@ -1,10 +1,18 @@
 
 
-# 输出目录（当前仓库根目录）
-$file = "D:\a\autos\autos\ls\UnFormattedConfig.json"
+$jsonPath = "D:\a\autos\autos\ls\UnFormattedConfig.json"
 
-# 写入文件（不存在会创建，存在会覆盖）
-$json | Set-Content -Path $file -Encoding UTF8
+if (!(Test-Path $jsonPath)) {
+    Write-Error "找不到文件 $jsonPath"
+    exit 1
+}
 
-Write-Host "its ok: $file"
+$fileInfo = Get-Item $jsonPath
+$sizeMB = [Math]::Round($fileInfo.Length / 1MB, 2)
+
+Write-Host "JSON 文件存在"
+Write-Host "文件大小: $sizeMB MB"
+
+
+Write-Host "its ok"
 
