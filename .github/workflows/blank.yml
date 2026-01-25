@@ -23,6 +23,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-json
-          path: D:\a\autos\autos\ls\autosUnFormattedConfig.json
+          path: D:\a\autos\autos\ls\UnFormattedConfig.json
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
