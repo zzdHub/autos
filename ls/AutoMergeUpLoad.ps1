@@ -6,6 +6,14 @@ $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 # 或者针对特定cmdlet
 $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 $PSDefaultParameterValues['Get-Content:Encoding'] = 'utf8'
+
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    if (Get-Command pwsh -ErrorAction SilentlyContinue) {
+       # Write-Host "检测到 Windows PowerShell，切换到 PowerShell 7..."
+        pwsh -NoProfile -ExecutionPolicy Bypass -File $MyInvocation.MyCommand.Path @args
+        exit $LASTEXITCODE
+    }
+}
 # Load static resources...
 . "D:\a\autos\autos\ls\static.ps1"
 . "D:\a\autos\autos\ls\AreesSubs.ps1"
@@ -60,6 +68,7 @@ Where-Object {
     if ( $_.type -match $deRegex -or $_.tag.Contains('过滤')) { return $_ }
 } | Select-Object -ExpandProperty tag
 
+Write-Host "cc: 测试中文就打撒大厦看到拉萨"
 Write-Host "cc: $($deleteTags)"
 
 # ====== 删除外层的不符合节点 ======
@@ -107,6 +116,7 @@ foreach ($out in $mainJson.outbounds) {
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
