@@ -26,9 +26,9 @@ jobs:
           ls ${{ github.workspace }}
       - name: excute script auto-script-singbox
         run: |
-           cd D:\a\autos\autos
-            powershell -ExecutionPolicy Bypass -File hhh.ps1
-            # powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
+           cd D:\a\autos\autos\ls
+            #powershell -ExecutionPolicy Bypass -File .ps1
+             powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
       - name: 使用 PowerShell 7
         shell: pwsh  # 现在会使用 PowerShell 7
         run: |
