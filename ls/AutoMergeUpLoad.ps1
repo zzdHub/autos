@@ -98,23 +98,9 @@ foreach ($out in $mainJson.outbounds) {
     }
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File .\merged_formatted.json -Encoding utf8
-do {
-    # upload 先测试是否连通
-    ssh -i "$sshKeyPath" -p 8022 user@192.168.0.101 exit
-    if ($LASTEXITCODE -ne 0) {
-        Start-Sleep -Seconds 4
-        Write-Host "wait for reconnection......"
-        continue
-    }
-    scp -i "$sshKeyPath" -P "$sshPort" "$localConfigPath" "${sshUser}@${phoneIP}:$remotePath"
-    if ($LASTEXITCODE -eq 0) {
-        Write-Host "The configuration upload was successful."
-        $success = $true
-    }
-    else {
-        Write-Host "An error occurred during the upload process.：$($_)"
-    }
-}while (-not $success)
+
+
+
 
 
 
