@@ -56,6 +56,7 @@ Where-Object {
     if ( $_.type -match $deRegex -or $_.tag -match '过滤|建议') { return $_ }
 } | Select-Object -ExpandProperty tag
 
+Write-Host "cc: $($deleteTags)"
 
 # ====== 删除外层的不符合节点 ======
 $subJson.outbounds = $subJson.outbounds | Where-Object {
@@ -102,6 +103,7 @@ foreach ($out in $mainJson.outbounds) {
 }
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
