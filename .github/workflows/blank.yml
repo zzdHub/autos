@@ -29,11 +29,6 @@ jobs:
            cd D:\a\autos\autos\ls
             #powershell -ExecutionPolicy Bypass -File .ps1
              powershell -ExecutionPolicy Bypass -File D:\a\autos\autos\ls\AutoMergeUpLoad.ps1
-      - name: 使用 PowerShell 7
-        shell: pwsh  # 现在会使用 PowerShell 7
-        run: |
-         Write-Host "当前版本: $($PSVersionTable.PSVersion)"
-         Write-Host "🎉 中文测试正常"
       - name: List files
         run: dir
         shell: cmd
