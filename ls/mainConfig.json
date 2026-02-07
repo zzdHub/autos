@@ -29,7 +29,8 @@
         "app.revanced.android.gms",
         "com.google.android.apps.translate",
         "com.innologica.inoreader",
-        "com.theotino.chinadaily"
+        "com.theotino.chinadaily",
+        "com.android.vending"
       ]
     }
   ],
@@ -56,6 +57,12 @@
         ]
       },
 
+     {
+        "package_name": "com.android.vending",
+        "outbound": "select"
+      },
+
+      
        {
         "domain_suffix": [
           "youtube.com",
@@ -196,4 +203,5 @@
     "independent_cache": true,
     "final": "Remote-DNS"
   }
+
 }
