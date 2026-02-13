@@ -36,7 +36,7 @@ for ($i = 0; $i -lt $subs.Count; $i++) {
 }
 # 构造参数数组  -d 参数靠tag 删除节点
 Write-Host "build script parameters....."
-$params = @("-t", $template, "-o", $UnConfig, "-G")
+$params = @("-t", $template, "-o", $UnConfig, "-G","selector")
 $successSubs | ForEach-Object {
     $params += "-s"
     $params += $_
@@ -116,6 +116,7 @@ $mainJson.outbounds = $subJson.outbounds
 #}
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
