@@ -36,7 +36,7 @@ for ($i = 0; $i -lt $subs.Count; $i++) {
 }
 # 构造参数数组  -d 参数靠tag 删除节点
 Write-Host "build script parameters....."
-$params = @("-t", $template, "-o", $UnConfig, "-G", "urltest")
+$params = @("-t", $template, "-o", $UnConfig, "-G")
 $successSubs | ForEach-Object {
     $params += "-s"
     $params += $_
@@ -86,16 +86,16 @@ foreach ($o in $subJson.outbounds) {
 }
 
 # 清理节点特别少的节点
-$deletenull = foreach ($o in $subJson.outbounds) {
-    if ($o.type -in ("urltest")) {
+#$deletenull = foreach ($o in $subJson.outbounds) {
+ #   if ($o.type -in ("urltest")) {
         # 再次清理urltest 数组小于4 的 踢出去
-        if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
-            $o.tag
-        }       
-    }    
-}
+   #     if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
+   #         $o.tag
+ #       }       
+#    }    
+#}
 #清理urltest
-$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
+#$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
 # 清理select
 foreach ($o in $subJson.outbounds) {
     if ($o.type -in ("selector") ) {
@@ -107,15 +107,16 @@ foreach ($o in $subJson.outbounds) {
     }
 }
 $mainJson.outbounds = $subJson.outbounds 
-foreach ($out in $mainJson.outbounds) {
-    if ($out.type -eq "urltest") {
-        if (-not $out.PSObject.Properties["interval"]) {
-            $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "10m"
-        }
-    }
-}
+#foreach ($out in $mainJson.outbounds) {
+  #  if ($out.type -eq "urltest") {
+    #    if (-not $out.PSObject.Properties["interval"]) {
+      #      $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "10m"
+  #      }
+  #  }
+#}
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
