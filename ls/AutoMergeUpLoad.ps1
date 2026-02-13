@@ -86,16 +86,16 @@ foreach ($o in $subJson.outbounds) {
 }
 
 # 清理节点特别少的节点
-#$deletenull = foreach ($o in $subJson.outbounds) {
- #   if ($o.type -in ("urltest")) {
+$deletenull = foreach ($o in $subJson.outbounds) {
+    if ($o.type -in ("selector")) {
         # 再次清理urltest 数组小于4 的 踢出去
-   #     if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
-   #         $o.tag
- #       }       
-#    }    
-#}
+        if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
+            $o.tag
+        }       
+    }    
+}
 #清理urltest
-#$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
+$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
 # 清理select
 foreach ($o in $subJson.outbounds) {
     if ($o.type -in ("selector") ) {
@@ -116,6 +116,7 @@ $mainJson.outbounds = $subJson.outbounds
 #}
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
