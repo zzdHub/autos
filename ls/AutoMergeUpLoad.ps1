@@ -65,7 +65,7 @@ $deRegex = '(?i)hysteria2|vmess'
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
     # $_.type -match $deRegex -or
-     if ( $_.type -match $deRegex -or $_.tag -match '(?i)过滤|建议|select') { return $_ }
+     if ( $_.type -match $deRegex -or $_.tag -match '(?i)过滤|建议') { return $_ }
 } | Select-Object -ExpandProperty tag
 
 Write-Host "cc: 测试中文就打撒大厦看到拉萨"
@@ -116,6 +116,7 @@ $mainJson.outbounds = $subJson.outbounds
 #}
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
+
 
 
 
