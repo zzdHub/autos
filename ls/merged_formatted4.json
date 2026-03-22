@@ -42,9 +42,9 @@
       "outbounds": [
         "新加坡(SG)",
         "中国(CN)",
-        "香港(HK)",
         "日本(JP)",
         "美国(US)",
+        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -55,7 +55,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：92.17 GB",
+      "tag": "剩余流量：92.13 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -454,22 +454,6 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "🇭🇰香港01",
-        "🇭🇰香港02解锁流媒体",
-        "🇭🇰香港03",
-        "🇭🇰香港04解锁流媒体",
-        "🇭🇰香港05",
-        "🇭🇰香港06",
-        "🇭🇰香港07",
-        "🇭🇰香港08",
-        "🇭🇰香港09"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本01解锁流媒体",
@@ -490,6 +474,22 @@
         "🇺🇸美国03纽约GPT",
         "🇺🇸美国04纽约GPT",
         "🇺🇸美国05维加斯GPT"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港01",
+        "🇭🇰香港02解锁流媒体",
+        "🇭🇰香港03",
+        "🇭🇰香港04解锁流媒体",
+        "🇭🇰香港05",
+        "🇭🇰香港06",
+        "🇭🇰香港07",
+        "🇭🇰香港08",
+        "🇭🇰香港09"
       ],
       "interrupt_exist_connections": true
     }
