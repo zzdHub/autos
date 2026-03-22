@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "中国(CN)",
-        "美国(US)",
         "新加坡(SG)",
-        "日本(JP)",
+        "中国(CN)",
         "香港(HK)",
+        "日本(JP)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -55,7 +55,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：92.43 GB",
+      "tag": "剩余流量：92.17 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -431,6 +431,17 @@
     },
     {
       "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡03解锁AI流媒体",
+        "🇸🇬新加坡04解锁AI流媒体"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾原生01",
@@ -443,24 +454,17 @@
     },
     {
       "type": "selector",
-      "tag": "美国(US)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "🇺🇸美国01纽约GPT",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国05维加斯GPT"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡03解锁AI流媒体",
-        "🇸🇬新加坡04解锁AI流媒体"
+        "🇭🇰香港01",
+        "🇭🇰香港02解锁流媒体",
+        "🇭🇰香港03",
+        "🇭🇰香港04解锁流媒体",
+        "🇭🇰香港05",
+        "🇭🇰香港06",
+        "🇭🇰香港07",
+        "🇭🇰香港08",
+        "🇭🇰香港09"
       ],
       "interrupt_exist_connections": true
     },
@@ -479,17 +483,13 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
+      "tag": "美国(US)",
       "outbounds": [
-        "🇭🇰香港01",
-        "🇭🇰香港02解锁流媒体",
-        "🇭🇰香港03",
-        "🇭🇰香港04解锁流媒体",
-        "🇭🇰香港05",
-        "🇭🇰香港06",
-        "🇭🇰香港07",
-        "🇭🇰香港08",
-        "🇭🇰香港09"
+        "🇺🇸美国01纽约GPT",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国05维加斯GPT"
       ],
       "interrupt_exist_connections": true
     }
