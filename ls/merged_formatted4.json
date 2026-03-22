@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
         "中国(CN)",
-        "日本(JP)",
         "美国(US)",
         "香港(HK)",
+        "新加坡(SG)",
+        "日本(JP)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -55,7 +55,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：92.13 GB",
+      "tag": "剩余流量：92.12 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -431,17 +431,6 @@
     },
     {
       "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡03解锁AI流媒体",
-        "🇸🇬新加坡04解锁AI流媒体"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾原生01",
@@ -449,19 +438,6 @@
         "🇨🇳台湾原生03",
         "🇨🇳台湾04家宽",
         "🇨🇳台湾家宽05"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本04",
-        "🇯🇵日本05",
-        "🇯🇵日本06"
       ],
       "interrupt_exist_connections": true
     },
@@ -490,6 +466,30 @@
         "🇭🇰香港07",
         "🇭🇰香港08",
         "🇭🇰香港09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡03解锁AI流媒体",
+        "🇸🇬新加坡04解锁AI流媒体"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本04",
+        "🇯🇵日本05",
+        "🇯🇵日本06"
       ],
       "interrupt_exist_connections": true
     }
