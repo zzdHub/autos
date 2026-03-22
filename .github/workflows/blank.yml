@@ -46,7 +46,6 @@ jobs:
            
            git add .
            git commit -m "auto update config" || echo "no changes"
-           git pull --rebase || echo "pull failed"
-           git push
+           git push origin HEAD:main --force
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
