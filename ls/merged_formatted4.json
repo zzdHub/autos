@@ -1,0 +1,644 @@
+{
+  "log": {
+    "disabled": true,
+    "level": "error"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30"
+      ],
+      "mtu": 1420,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "system",
+      "include_package": [
+        "org.telegram.messenger",
+        "com.ichi2.anki",
+        "app.revanced.android.youtube",
+        "com.openai.chatgpt",
+        "com.android.vending",
+        "com.foxdebug.acodefree",
+        "com.android.chrome",
+        "com.google.android.gms",
+        "com.google.android.gsf",
+        "com.google.android.tts",
+        "app.revanced.android.gms",
+        "com.google.android.apps.translate",
+        "com.innologica.inoreader",
+        "com.theotino.chinadaily",
+        "com.twitter.android"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "香港(HK)",
+        "日本(JP)",
+        "中国(CN)",
+        "美国(US)",
+        "新加坡(SG)",
+        "direct"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "剩余流量：92.47 GB",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19002,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "套餐到期：长期有效",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19002,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19002,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港02解锁流媒体",
+      "server": "wyy5.l8inn.com",
+      "server_port": 19006,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ZDJmMGExNTdiYTNmOTdmNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港03",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19008,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港04解锁流媒体",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19009,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ZDJmMGExNTdiYTNmOTdmNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港05",
+      "server": "wyy3.l8inn.com",
+      "server_port": 19023,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港06",
+      "server": "wyy3.l8inn.com",
+      "server_port": 19025,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MzRlY2YwNDQzMzY0OTI3OQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港07",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19026,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港08",
+      "server": "wyy3.l8inn.com",
+      "server_port": 19027,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港09",
+      "server": "wyy3.l8inn.com",
+      "server_port": 19750,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡01🔒解锁流媒体",
+      "server": "wyy1.l8inn.com",
+      "server_port": 45689,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ZTc2Y2VmOWMzOWI2ZDYyNg==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡02🔒解锁流媒体",
+      "server": "wyy5.l8inn.com",
+      "server_port": 19003,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ZTc2Y2VmOWMzOWI2ZDYyNg==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡03解锁AI流媒体",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19055,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ODcwYjhjNTJmZWM4ZDhkMQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡04解锁AI流媒体",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19056,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "ODcwYjhjNTJmZWM4ZDhkMQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本01解锁流媒体",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19001,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本02解锁流媒体",
+      "server": "wyy5.l8inn.com",
+      "server_port": 19010,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本03",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19018,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本04",
+      "server": "wyy3.l8inn.com",
+      "server_port": 34501,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MWJlNTY1ZWQ1ZWNiOGMwNQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本05",
+      "server": "wyy2.l8inn.com",
+      "server_port": 55002,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MWJlNTY1ZWQ1ZWNiOGMwNQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本06",
+      "server": "wyy3.l8inn.com",
+      "server_port": 55003,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MWJlNTY1ZWQ1ZWNiOGMwNQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "泰国🇹🇭01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 35615,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Nzk3ZGM0NTlkNzI3MTJiNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪德国01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 25802,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MTEzYzRmODM2MDMyNTNkOA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪德国02",
+      "server": "wyy5.l8inn.com",
+      "server_port": 25803,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "MTEzYzRmODM2MDMyNTNkOA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇾马来西亚",
+      "server": "wyy1.l8inn.com",
+      "server_port": 45800,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦加拿大01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 32223,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇸冰岛",
+      "server": "wyy3.l8inn.com",
+      "server_port": 12004,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇽墨西哥01",
+      "server": "wyy2.l8inn.com",
+      "server_port": 23406,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱波兰01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 46502,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭瑞士01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 32222,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷韩国01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 44113,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷法国01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 56614,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇪比利时01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 20254,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "越南🇻🇳01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 34333,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzNmZjJlMGFkOGMxZTY4ZA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "越南🇻🇳02",
+      "server": "wyy5.l8inn.com",
+      "server_port": 34337,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzNmZjJlMGFkOGMxZTY4ZA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾原生01",
+      "server": "wyy3.l8inn.com",
+      "server_port": 19004,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾原生02",
+      "server": "wyy5.l8inn.com",
+      "server_port": 21003,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾原生03",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19019,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾04家宽",
+      "server": "wyy1.l8inn.com",
+      "server_port": 30099,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NTJiOTNlOTBiNzBlZjcyOA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾家宽05",
+      "server": "wyy5.l8inn.com",
+      "server_port": 37888,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NTJiOTNlOTBiNzBlZjcyOA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国01纽约GPT",
+      "server": "wyy1.l8inn.com",
+      "server_port": 45590,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "YTk2YjE5OWQ0MjJkMjU1NA==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国02纽约GPT",
+      "server": "wyy5.l8inn.com",
+      "server_port": 19005,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国03纽约GPT",
+      "server": "wyy2.l8inn.com",
+      "server_port": 34569,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国04纽约GPT",
+      "server": "wyy2.l8inn.com",
+      "server_port": 19020,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国05维加斯GPT",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19791,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "OWUxNzNkZmNhZGFlODlkMQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧英国01",
+      "server": "wyy1.l8inn.com",
+      "server_port": 19021,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧英国02",
+      "server": "wyy5.l8inn.com",
+      "server_port": 19022,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港01",
+        "🇭🇰香港02解锁流媒体",
+        "🇭🇰香港03",
+        "🇭🇰香港04解锁流媒体",
+        "🇭🇰香港05",
+        "🇭🇰香港06",
+        "🇭🇰香港07",
+        "🇭🇰香港08",
+        "🇭🇰香港09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本04",
+        "🇯🇵日本05",
+        "🇯🇵日本06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾04家宽",
+        "🇨🇳台湾家宽05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国01纽约GPT",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国05维加斯GPT"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡03解锁AI流媒体",
+        "🇸🇬新加坡04解锁AI流媒体"
+      ],
+      "interrupt_exist_connections": true
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "hijack-dns",
+        "port": [
+          53
+        ]
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      },
+      {
+        "package_name": "com.android.vending",
+        "outbound": "select"
+      },
+      {
+        "domain_suffix": [
+          "youtube.com",
+          "googlevideo.com",
+          "ytimg.com",
+          "youtubei.googleapis.com",
+          "google.com",
+          "gstatic.com",
+          "googleapis.com",
+          "twitter.com",
+          "x.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-Private"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-CN"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "GeoIP-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "GeoSite-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "GeoLocation-!CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "format": "binary",
+        "download_detour": "direct"
+      }
+    ],
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    },
+    "auto_detect_interface": true,
+    "final": "select"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "udp",
+        "tag": "Local-DNS",
+        "server": "223.5.5.5",
+        "server_port": 53
+      },
+      {
+        "type": "https",
+        "tag": "Remote-DNS",
+        "server": "dns.google",
+        "detour": "select"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "server": "Local-DNS"
+      },
+      {
+        "domain_suffix": [
+          "google.com",
+          "youtube.com",
+          "googleapis.com",
+          "twitter.com",
+          "x.com"
+        ],
+        "server": "Remote-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": true,
+    "final": "Remote-DNS"
+  }
+}
