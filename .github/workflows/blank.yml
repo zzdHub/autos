@@ -3,7 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
  schedule:
     # 每8小时一次（0点、8点、16点 UTC）
-    - cron: '0 */8 * * *'
+    #- cron: '0 */8 * * *'
+    - cron: '*/5 * * * *'
+ workflow_dispatch:
+  
 jobs:
   Explore-GitHub-Actions:
     runs-on: windows-latest
