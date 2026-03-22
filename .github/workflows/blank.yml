@@ -1,6 +1,8 @@
-name: GitHub Actions Demo
+name: singbox autoupdate config
 run-name: ${{ github.actor }} is test auto update to singbox
 on: 
+ push:
+  branches: [main]
  schedule:
     # 每8小时一次（0点、8点、16点 UTC）
     #- cron: '0 */8 * * *'
