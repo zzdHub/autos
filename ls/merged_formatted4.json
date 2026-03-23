@@ -40,12 +40,12 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "美国(US)",
-        "德国(DE)",
-        "中国(CN)",
         "香港(HK)",
         "新加坡(SG)",
+        "中国(CN)",
         "日本(JP)",
+        "美国(US)",
+        "德国(DE)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -56,7 +56,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：90.78 GB",
+      "tag": "剩余流量：90.01 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -616,47 +616,6 @@
     },
     {
       "type": "selector",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国01纽约GPT",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国05维加斯GPT",
-        "🇺🇸美国US01",
-        "🇺🇸美国US02",
-        "🇺🇸美国US-住宅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国01",
-        "🇩🇪德国02",
-        "🇩🇪德国DE01",
-        "🇩🇪德国DE02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾04家宽",
-        "🇨🇳台湾家宽05",
-        "🇨🇳台湾CN-原生02",
-        "🇨🇳台湾CN-住宅",
-        "🇨🇳台湾CN-原生01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "香港(HK)",
       "outbounds": [
         "🇭🇰香港01",
@@ -693,6 +652,21 @@
     },
     {
       "type": "selector",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾04家宽",
+        "🇨🇳台湾家宽05",
+        "🇨🇳台湾CN-原生02",
+        "🇨🇳台湾CN-住宅",
+        "🇨🇳台湾CN-原生01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本01解锁流媒体",
@@ -703,6 +677,32 @@
         "🇯🇵日本06",
         "🇯🇵日本JP01",
         "🇯🇵日本JP02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国01纽约GPT",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国05维加斯GPT",
+        "🇺🇸美国US01",
+        "🇺🇸美国US02",
+        "🇺🇸美国US-住宅"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "🇩🇪德国01",
+        "🇩🇪德国02",
+        "🇩🇪德国DE01",
+        "🇩🇪德国DE02"
       ],
       "interrupt_exist_connections": true
     }
