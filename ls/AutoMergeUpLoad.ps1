@@ -28,6 +28,9 @@ for ($i = 0; $i -lt $subs.Count; $i++) {
     $exitCode = $LASTEXITCODE
     if ($exitCode -ne 0 -or $output -match "(?i)error|forbidden|invalid") {
         Write-Host "sub $($i+1) error" 
+        Write-Host "sub $($i+1) error: $output " 
+        
+
     }
     else {
         Write-Host "sub $($i+1) successful" 
