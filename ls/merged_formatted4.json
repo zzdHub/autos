@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "日本(JP)",
-        "中国(CN)",
-        "新加坡(SG)",
         "德国(DE)",
+        "中国(CN)",
         "美国(US)",
+        "新加坡(SG)",
+        "日本(JP)",
         "香港(HK)",
         "direct"
       ],
@@ -56,7 +56,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：90 GB",
+      "tag": "剩余流量：89.94 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -616,16 +616,12 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "德国(DE)",
       "outbounds": [
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本04",
-        "🇯🇵日本05",
-        "🇯🇵日本06",
-        "🇯🇵日本JP01",
-        "🇯🇵日本JP02"
+        "🇩🇪德国01",
+        "🇩🇪德国02",
+        "🇩🇪德国DE01",
+        "🇩🇪德国DE02"
       ],
       "interrupt_exist_connections": true
     },
@@ -646,6 +642,21 @@
     },
     {
       "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国01纽约GPT",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国05维加斯GPT",
+        "🇺🇸美国US01",
+        "🇺🇸美国US02",
+        "🇺🇸美国US-住宅"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "新加坡(SG)",
       "outbounds": [
         "🇸🇬新加坡01🔒解锁流媒体",
@@ -660,27 +671,16 @@
     },
     {
       "type": "selector",
-      "tag": "德国(DE)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "🇩🇪德国01",
-        "🇩🇪德国02",
-        "🇩🇪德国DE01",
-        "🇩🇪德国DE02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国01纽约GPT",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国05维加斯GPT",
-        "🇺🇸美国US01",
-        "🇺🇸美国US02",
-        "🇺🇸美国US-住宅"
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本04",
+        "🇯🇵日本05",
+        "🇯🇵日本06",
+        "🇯🇵日本JP01",
+        "🇯🇵日本JP02"
       ],
       "interrupt_exist_connections": true
     },
