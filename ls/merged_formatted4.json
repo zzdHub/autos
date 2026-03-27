@@ -43,9 +43,9 @@
         "香港(HK)",
         "德国(DE)",
         "新加坡(SG)",
+        "中国(CN)",
         "美国(US)",
         "日本(JP)",
-        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -663,6 +663,21 @@
     },
     {
       "type": "selector",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾04家宽",
+        "🇨🇳台湾家宽05",
+        "🇨🇳台湾CN-原生02",
+        "🇨🇳台湾CN-住宅",
+        "🇨🇳台湾CN-原生01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "美国(US)",
       "outbounds": [
         "🇺🇸美国01纽约GPT",
@@ -688,21 +703,6 @@
         "🇯🇵日本06",
         "🇯🇵日本JP01",
         "🇯🇵日本JP02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾04家宽",
-        "🇨🇳台湾家宽05",
-        "🇨🇳台湾CN-原生02",
-        "🇨🇳台湾CN-住宅",
-        "🇨🇳台湾CN-原生01"
       ],
       "interrupt_exist_connections": true
     }
