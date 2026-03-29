@@ -42,10 +42,10 @@
       "outbounds": [
         "中国(CN)",
         "日本(JP)",
-        "美国(US)",
-        "新加坡(SG)",
         "德国(DE)",
+        "美国(US)",
         "香港(HK)",
+        "新加坡(SG)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -56,7 +56,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：88.12 GB",
+      "tag": "剩余流量：87.66 GB",
       "server": "wyy1.l8inn.com",
       "server_port": 19002,
       "method": "2022-blake3-aes-128-gcm",
@@ -645,6 +645,17 @@
     },
     {
       "type": "selector",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "🇩🇪德国01",
+        "🇩🇪德国02",
+        "🇩🇪德国DE01",
+        "🇩🇪德国DE02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "美国(US)",
       "outbounds": [
         "🇺🇸美国01纽约GPT",
@@ -655,31 +666,6 @@
         "🇺🇸美国US01",
         "🇺🇸美国US02",
         "🇺🇸美国US-住宅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡03解锁AI流媒体",
-        "🇸🇬新加坡04解锁AI流媒体",
-        "🇸🇬新加坡SG01",
-        "🇸🇬新加坡SG-原生",
-        "🇸🇬新加坡SG02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国01",
-        "🇩🇪德国02",
-        "🇩🇪德国DE01",
-        "🇩🇪德国DE02"
       ],
       "interrupt_exist_connections": true
     },
@@ -703,6 +689,20 @@
         "🇭🇰香港CN-住宅",
         "🇭🇰香港CN-原生",
         "🇭🇰香港CN-原生02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡03解锁AI流媒体",
+        "🇸🇬新加坡04解锁AI流媒体",
+        "🇸🇬新加坡SG01",
+        "🇸🇬新加坡SG-原生",
+        "🇸🇬新加坡SG02"
       ],
       "interrupt_exist_connections": true
     }
