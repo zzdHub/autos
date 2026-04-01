@@ -41,11 +41,11 @@
       "tag": "select",
       "outbounds": [
         "美国(US)",
-        "香港(HK)",
         "日本(JP)",
+        "香港(HK)",
+        "新加坡(SG)",
         "德国(DE)",
         "中国(CN)",
-        "新加坡(SG)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -442,7 +442,7 @@
       "type": "shadowsocks",
       "tag": "🇯🇵日本JP01",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 31527,
+      "server_port": 47616,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -450,7 +450,7 @@
       "type": "shadowsocks",
       "tag": "🇯🇵日本JP02",
       "server": "bbb123.mjaqmh.cn",
-      "server_port": 53943,
+      "server_port": 53944,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -490,7 +490,7 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN03",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 49431,
+      "server_port": 47357,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -546,7 +546,7 @@
       "type": "shadowsocks",
       "tag": "🇺🇸美国US01",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 48147,
+      "server_port": 16119,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -602,7 +602,7 @@
       "type": "shadowsocks",
       "tag": "🇸🇬新加坡SG02",
       "server": "bbb123.mjaqmh.cn",
-      "server_port": 59850,
+      "server_port": 59851,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -610,7 +610,7 @@
       "type": "shadowsocks",
       "tag": "🇻🇳越南VN01-住宅",
       "server": "bbb123.mjaqmh.cn",
-      "server_port": 41795,
+      "server_port": 41796,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -639,6 +639,21 @@
     },
     {
       "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本04",
+        "🇯🇵日本05",
+        "🇯🇵日本06",
+        "🇯🇵日本JP01",
+        "🇯🇵日本JP02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "香港(HK)",
       "outbounds": [
         "🇭🇰香港01",
@@ -662,16 +677,15 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本04",
-        "🇯🇵日本05",
-        "🇯🇵日本06",
-        "🇯🇵日本JP01",
-        "🇯🇵日本JP02"
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡03解锁AI流媒体",
+        "🇸🇬新加坡04解锁AI流媒体",
+        "🇸🇬新加坡SG01",
+        "🇸🇬新加坡SG-原生",
+        "🇸🇬新加坡SG02"
       ],
       "interrupt_exist_connections": true
     },
@@ -697,20 +711,6 @@
         "🇨🇳台湾家宽05",
         "🇨🇳台湾CN-原生01",
         "🇨🇳台湾CN-住宅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡03解锁AI流媒体",
-        "🇸🇬新加坡04解锁AI流媒体",
-        "🇸🇬新加坡SG01",
-        "🇸🇬新加坡SG-原生",
-        "🇸🇬新加坡SG02"
       ],
       "interrupt_exist_connections": true
     }
