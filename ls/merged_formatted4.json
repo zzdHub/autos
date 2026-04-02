@@ -40,12 +40,12 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "日本(JP)",
         "德国(DE)",
-        "中国(CN)",
-        "美国(US)",
         "香港(HK)",
         "新加坡(SG)",
-        "日本(JP)",
+        "中国(CN)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -121,42 +121,42 @@
     {
       "type": "shadowsocks",
       "tag": "🇭🇰香港07",
-      "server": "wyy2.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19026,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇭🇰香港08",
-      "server": "wyy3.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19027,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇭🇰香港09",
-      "server": "wyy3.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19750,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "OWI3MTM5NjUyOTM2N2RhNA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬新加坡01🔒解锁流媒体",
-      "server": "wyy1.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 45689,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "ZTc2Y2VmOWMzOWI2ZDYyNg==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬新加坡02🔒解锁流媒体",
-      "server": "wyy5.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19003,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "ZTc2Y2VmOWMzOWI2ZDYyNg==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
@@ -177,26 +177,26 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵日本01解锁流媒体",
-      "server": "wyy1.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19001,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵日本02解锁流媒体",
-      "server": "wyy5.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19010,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵日本03",
-      "server": "wyy2.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19018,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NzE1MThkYTQwYWMwYWJmMA==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
@@ -337,26 +337,26 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇳台湾原生01",
-      "server": "wyy3.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19004,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇳台湾原生02",
-      "server": "wyy5.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 21003,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇳台湾原生03",
-      "server": "wyy1.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19019,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NTgyY2RkZmI5ZWNjNjFkYQ==:YmQyMGU1N2ItZmQwNy00Yg=="
+      "method": "chacha20-ietf-poly1305",
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
       "type": "shadowsocks",
@@ -385,7 +385,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇸美国02纽约GPT",
-      "server": "wyy5.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19005,
       "method": "chacha20-ietf-poly1305",
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -393,7 +393,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇸美国03纽约GPT",
-      "server": "wyy2.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 34569,
       "method": "chacha20-ietf-poly1305",
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -401,7 +401,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇸美国04纽约GPT",
-      "server": "wyy2.l8inn.com",
+      "server": "wyy6.l8inn.com",
       "server_port": 19020,
       "method": "chacha20-ietf-poly1305",
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -624,41 +624,27 @@
     },
     {
       "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本04",
+        "🇯🇵日本05",
+        "🇯🇵日本06",
+        "🇯🇵日本JP01",
+        "🇯🇵日本JP02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "德国(DE)",
       "outbounds": [
         "🇩🇪德国01",
         "🇩🇪德国02",
         "🇩🇪德国DE01",
         "🇩🇪德国DE02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾04家宽",
-        "🇨🇳台湾家宽05",
-        "🇨🇳台湾CN-原生01",
-        "🇨🇳台湾CN-住宅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国01纽约GPT",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国05维加斯GPT",
-        "🇺🇸美国US01",
-        "🇺🇸美国US02",
-        "🇺🇸美国US-住宅"
       ],
       "interrupt_exist_connections": true
     },
@@ -701,16 +687,30 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本04",
-        "🇯🇵日本05",
-        "🇯🇵日本06",
-        "🇯🇵日本JP01",
-        "🇯🇵日本JP02"
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾04家宽",
+        "🇨🇳台湾家宽05",
+        "🇨🇳台湾CN-原生01",
+        "🇨🇳台湾CN-住宅"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国01纽约GPT",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国05维加斯GPT",
+        "🇺🇸美国US01",
+        "🇺🇸美国US02",
+        "🇺🇸美国US-住宅"
       ],
       "interrupt_exist_connections": true
     }
