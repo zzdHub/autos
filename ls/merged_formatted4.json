@@ -40,10 +40,10 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "香港(HK)",
         "日本(JP)",
         "中国(CN)",
         "美国(US)",
-        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -54,7 +54,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "剩余流量：86.36 GB",
+      "tag": "剩余流量：86.26 GB",
       "server": "wyy6.l8inn.com",
       "server_port": 19026,
       "method": "chacha20-ietf-poly1305",
@@ -208,7 +208,7 @@
       "type": "shadowsocks",
       "tag": "🇨🇳台湾CN-原生01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 45196,
+      "server_port": 31696,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -216,7 +216,7 @@
       "type": "shadowsocks",
       "tag": "🇨🇳台湾CN-住宅（20）倍",
       "server": "bbb123.mjaqmh.cn",
-      "server_port": 57495,
+      "server_port": 41068,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -248,15 +248,15 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN-原生（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 16725,
+      "server_port": 17227,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
     {
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN-原生02（20）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 21147,
+      "server": "bbb123.mjaqmh.cn",
+      "server_port": 38495,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -272,7 +272,7 @@
       "type": "shadowsocks",
       "tag": "🇺🇸美国US01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 38101,
+      "server_port": 54644,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -296,7 +296,7 @@
       "type": "shadowsocks",
       "tag": "🇸🇬新加坡SG01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 18180,
+      "server_port": 28658,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -315,6 +315,21 @@
       "server_port": 45277,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港07",
+        "🇭🇰香港08",
+        "🇭🇰香港09",
+        "🇭🇰香港CN01（20）倍",
+        "🇭🇰香港CN02（20）倍",
+        "🇭🇰香港CN-住宅（20）倍",
+        "🇭🇰香港CN-原生（20）倍",
+        "🇭🇰香港CN-原生02（20）倍"
+      ],
+      "interrupt_exist_connections": true
     },
     {
       "type": "selector",
@@ -349,21 +364,6 @@
         "🇺🇸美国04纽约GPT",
         "🇺🇸美国US01（20）倍",
         "🇺🇸美国US-住宅（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "🇭🇰香港07",
-        "🇭🇰香港08",
-        "🇭🇰香港09",
-        "🇭🇰香港CN01（20）倍",
-        "🇭🇰香港CN02（20）倍",
-        "🇭🇰香港CN-住宅（20）倍",
-        "🇭🇰香港CN-原生（20）倍",
-        "🇭🇰香港CN-原生02（20）倍"
       ],
       "interrupt_exist_connections": true
     }
