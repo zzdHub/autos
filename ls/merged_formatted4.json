@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "中国(CN)",
         "香港(HK)",
         "新加坡(SG)",
-        "美国(US)",
+        "中国(CN)",
         "日本(JP)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -155,6 +155,27 @@
           "enabled": true,
           "public_key": "TF7rDG9_FUUasfUEq3jBAUo6WO4e893Me5BvUd27jhs",
           "short_id": "b27329"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "美国🇺🇸直连04",
+      "server": "uusa.hhwyy.xyz",
+      "server_port": 33553,
+      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zh-hk.vuejs.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hr495MZFvAmp-Eno9jULB1uKYRvNJ9VLCruLAR308GE",
+          "short_id": "5f8bc5cb627f"
         }
       }
     },
@@ -416,18 +437,6 @@
     },
     {
       "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾CN-原生01（20）倍",
-        "🇨🇳台湾CN-住宅（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "香港(HK)",
       "outbounds": [
         "香港aws直连🇭🇰",
@@ -456,13 +465,13 @@
     },
     {
       "type": "selector",
-      "tag": "美国(US)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国US01（20）倍",
-        "🇺🇸美国US-住宅（20）倍"
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾CN-原生01（20）倍",
+        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -475,6 +484,19 @@
         "🇯🇵日本03",
         "🇯🇵日本JP01（20）倍",
         "🇯🇵日本JP02（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸直连04",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国US01（20）倍",
+        "🇺🇸美国US-住宅（20）倍"
       ],
       "interrupt_exist_connections": true
     }
