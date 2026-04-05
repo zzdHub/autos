@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
         "新加坡(SG)",
-        "中国(CN)",
         "日本(JP)",
         "美国(US)",
+        "香港(HK)",
+        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -437,22 +437,6 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港aws直连🇭🇰",
-        "🇭🇰香港07",
-        "🇭🇰香港09",
-        "🇭🇰香港08",
-        "🇭🇰香港CN01（20）倍",
-        "🇭🇰香港CN02（3）倍",
-        "🇭🇰香港CN-住宅（20）倍",
-        "🇭🇰香港CN-原生（20）倍",
-        "🇭🇰香港CN-原生02（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "新加坡(SG)",
       "outbounds": [
         "新加坡aws直连🇸🇬",
@@ -460,18 +444,6 @@
         "🇸🇬新加坡02🔒解锁流媒体",
         "🇸🇬新加坡SG01（20）倍",
         "🇸🇬新加坡SG02（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾CN-原生01（20）倍",
-        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -497,6 +469,34 @@
         "🇺🇸美国04纽约GPT",
         "🇺🇸美国US01（20）倍",
         "🇺🇸美国US-住宅（20）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港aws直连🇭🇰",
+        "🇭🇰香港07",
+        "🇭🇰香港09",
+        "🇭🇰香港08",
+        "🇭🇰香港CN01（20）倍",
+        "🇭🇰香港CN02（3）倍",
+        "🇭🇰香港CN-住宅（20）倍",
+        "🇭🇰香港CN-原生（20）倍",
+        "🇭🇰香港CN-原生02（20）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾CN-原生01（20）倍",
+        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     }
