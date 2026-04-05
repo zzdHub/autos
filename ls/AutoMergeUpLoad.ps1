@@ -64,7 +64,7 @@ try {
 catch {
     Write-Host "failed to parse the file. please check try agin : $($_.Exception.Message)"
 }
-$deRegex = '(?i)hysteria2|vmess'
+$deRegex = '(?i)hysteria2'
 # 根据type和tag 筛选需要删除的tag 
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
