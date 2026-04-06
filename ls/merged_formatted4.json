@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "美国(US)",
-        "中国(CN)",
-        "新加坡(SG)",
         "日本(JP)",
+        "中国(CN)",
         "香港(HK)",
+        "新加坡(SG)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -55,7 +55,7 @@
     },
     {
       "type": "vless",
-      "tag": "剩余流量：85.17+GB",
+      "tag": "剩余流量：85.14+GB",
       "server": "xghh.jdzyym.sbs",
       "server_port": 13954,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
@@ -458,14 +458,14 @@
     },
     {
       "type": "selector",
-      "tag": "美国(US)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "美国🇺🇸直连04",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国US01（20）倍",
-        "🇺🇸美国US-住宅（20）倍"
+        "日本直连",
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本JP01（20）倍",
+        "🇯🇵日本JP02（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -483,6 +483,22 @@
     },
     {
       "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港aws直连🇭🇰",
+        "🇭🇰香港07",
+        "🇭🇰香港09",
+        "🇭🇰香港08",
+        "🇭🇰香港CN01（20）倍",
+        "🇭🇰香港CN02（3）倍",
+        "🇭🇰香港CN-住宅（20）倍",
+        "🇭🇰香港CN-原生（20）倍",
+        "🇭🇰香港CN-原生02（20）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "新加坡(SG)",
       "outbounds": [
         "新加坡aws直连🇸🇬",
@@ -495,30 +511,14 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "美国(US)",
       "outbounds": [
-        "日本直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本JP01（20）倍",
-        "🇯🇵日本JP02（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港aws直连🇭🇰",
-        "🇭🇰香港07",
-        "🇭🇰香港09",
-        "🇭🇰香港08",
-        "🇭🇰香港CN01（20）倍",
-        "🇭🇰香港CN02（3）倍",
-        "🇭🇰香港CN-住宅（20）倍",
-        "🇭🇰香港CN-原生（20）倍",
-        "🇭🇰香港CN-原生02（20）倍"
+        "美国🇺🇸直连04",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国US01（20）倍",
+        "🇺🇸美国US-住宅（20）倍"
       ],
       "interrupt_exist_connections": true
     }
