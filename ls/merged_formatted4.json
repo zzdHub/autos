@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
-        "新加坡(SG)",
-        "中国(CN)",
-        "日本(JP)",
         "美国(US)",
+        "中国(CN)",
+        "新加坡(SG)",
+        "日本(JP)",
+        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -55,72 +55,72 @@
     },
     {
       "type": "vless",
-      "tag": "剩余流量：86.2+GB",
-      "server": "wsae.hhwyy.xyz",
-      "server_port": 43180,
+      "tag": "剩余流量：85.17+GB",
+      "server": "xghh.jdzyym.sbs",
+      "server_port": 13954,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
+        "server_name": "www.calstatela.edu",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xdEIDwMe36H3JnFrs-oOk3B4uVg-3mgiMWt1cwT-Wio",
-          "short_id": "baa6e2524167c067"
+          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
+          "short_id": "b0976eed"
         }
       }
     },
     {
       "type": "vless",
       "tag": "套餐到期：长期有效",
-      "server": "wsae.hhwyy.xyz",
-      "server_port": 43180,
+      "server": "xghh.jdzyym.sbs",
+      "server_port": 13954,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
+        "server_name": "www.calstatela.edu",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xdEIDwMe36H3JnFrs-oOk3B4uVg-3mgiMWt1cwT-Wio",
-          "short_id": "baa6e2524167c067"
+          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
+          "short_id": "b0976eed"
         }
       }
     },
     {
       "type": "vless",
       "tag": "香港aws直连🇭🇰",
-      "server": "wsae.hhwyy.xyz",
-      "server_port": 43180,
+      "server": "xghh.jdzyym.sbs",
+      "server_port": 13954,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
+        "server_name": "www.calstatela.edu",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xdEIDwMe36H3JnFrs-oOk3B4uVg-3mgiMWt1cwT-Wio",
-          "short_id": "baa6e2524167c067"
+          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
+          "short_id": "b0976eed"
         }
       }
     },
     {
       "type": "vless",
       "tag": "新加坡aws直连🇸🇬",
-      "server": "18.139.227.124",
-      "server_port": 33551,
+      "server": "13.229.146.29",
+      "server_port": 55941,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -132,8 +132,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zu-6awPnOk5dP05xL1hUBrdjsgbgBoAw68RPPqP5BjI",
-          "short_id": "844af1b236"
+          "public_key": "HAqf1WqWvNQwr6o6h_WjhOOa3E-mPDZ5GA56slNZ1Go",
+          "short_id": "344ceb31"
         }
       }
     },
@@ -160,22 +160,22 @@
     },
     {
       "type": "vless",
-      "tag": "新加坡直连",
-      "server": "jjpx.hhwyy.xyz",
-      "server_port": 60056,
+      "tag": "日本直连",
+      "server": "3.112.53.101",
+      "server_port": 60031,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
+        "server_name": "www.lamer.com.hk",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e-VAxwkExfThlycwoebGAhe1awOc22eabL_ILeOYtQQ",
-          "short_id": "9f5094ce13"
+          "public_key": "VSz1UQZtAKaV1S78kh7HkUDRrZsjhWxL8rzzbmr7dCg",
+          "short_id": "3b4455867221"
         }
       }
     },
@@ -340,7 +340,7 @@
       "type": "shadowsocks",
       "tag": "🇨🇳台湾CN-原生01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 31696,
+      "server_port": 25386,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -372,7 +372,7 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN-住宅（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 36754,
+      "server_port": 24372,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -380,7 +380,7 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN-原生（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 17227,
+      "server_port": 37750,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -404,7 +404,7 @@
       "type": "shadowsocks",
       "tag": "🇺🇸美国US01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 54644,
+      "server_port": 49691,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -412,7 +412,7 @@
       "type": "shadowsocks",
       "tag": "🇺🇸美国US-住宅（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 37006,
+      "server_port": 44887,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -428,7 +428,7 @@
       "type": "shadowsocks",
       "tag": "🇸🇬新加坡SG01（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 28658,
+      "server_port": 14914,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -450,7 +450,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧英国GB01-住宅",
+      "tag": "🇬🇧英国GB01-住宅（20）倍",
       "server": "aaa123.mjaqmh.cn",
       "server_port": 57056,
       "method": "chacha20-ietf-poly1305",
@@ -458,30 +458,14 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
+      "tag": "美国(US)",
       "outbounds": [
-        "香港aws直连🇭🇰",
-        "🇭🇰香港07",
-        "🇭🇰香港09",
-        "🇭🇰香港08",
-        "🇭🇰香港CN01（20）倍",
-        "🇭🇰香港CN02（3）倍",
-        "🇭🇰香港CN-住宅（20）倍",
-        "🇭🇰香港CN-原生（20）倍",
-        "🇭🇰香港CN-原生02（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "新加坡aws直连🇸🇬",
-        "新加坡直连",
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡SG01（20）倍",
-        "🇸🇬新加坡SG02（3）倍"
+        "美国🇺🇸直连04",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国US01（20）倍",
+        "🇺🇸美国US-住宅（20）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -499,8 +483,21 @@
     },
     {
       "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "新加坡aws直连🇸🇬",
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡SG01（20）倍",
+        "🇸🇬新加坡SG02（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "日本(JP)",
       "outbounds": [
+        "日本直连",
         "🇯🇵日本01解锁流媒体",
         "🇯🇵日本02解锁流媒体",
         "🇯🇵日本03",
@@ -511,14 +508,17 @@
     },
     {
       "type": "selector",
-      "tag": "美国(US)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "美国🇺🇸直连04",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国US01（20）倍",
-        "🇺🇸美国US-住宅（20）倍"
+        "香港aws直连🇭🇰",
+        "🇭🇰香港07",
+        "🇭🇰香港09",
+        "🇭🇰香港08",
+        "🇭🇰香港CN01（20）倍",
+        "🇭🇰香港CN02（3）倍",
+        "🇭🇰香港CN-住宅（20）倍",
+        "🇭🇰香港CN-原生（20）倍",
+        "🇭🇰香港CN-原生02（20）倍"
       ],
       "interrupt_exist_connections": true
     }
