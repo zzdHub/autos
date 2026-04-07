@@ -91,7 +91,7 @@ foreach ($o in $subJson.outbounds) {
 
 # 清理节点特别少的节点
 $deletenull = foreach ($o in $subJson.outbounds) {
-    if ($o.type -in ("selector")) {
+    if ($o.type -in ("urltest")) {
         # 再次清理urltest 数组小于4 的 踢出去
         if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
             $o.tag
