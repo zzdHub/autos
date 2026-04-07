@@ -41,10 +41,10 @@
       "tag": "select",
       "outbounds": [
         "香港(HK)",
-        "日本(JP)",
-        "新加坡(SG)",
-        "美国(US)",
         "中国(CN)",
+        "新加坡(SG)",
+        "日本(JP)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -56,8 +56,8 @@
     {
       "type": "vless",
       "tag": "剩余流量：85.14+GB",
-      "server": "xghh.jdzyym.sbs",
-      "server_port": 13954,
+      "server": "hhki.jdzyym.sbs",
+      "server_port": 13009,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -69,16 +69,16 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
-          "short_id": "b0976eed"
+          "public_key": "P4H7aVxHQJr6-PWQu57YeQBL9wIOEJTx-4e9F2IdtFg",
+          "short_id": "245111ae772590c2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "套餐到期：长期有效",
-      "server": "xghh.jdzyym.sbs",
-      "server_port": 13954,
+      "server": "hhki.jdzyym.sbs",
+      "server_port": 13009,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -90,16 +90,16 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
-          "short_id": "b0976eed"
+          "public_key": "P4H7aVxHQJr6-PWQu57YeQBL9wIOEJTx-4e9F2IdtFg",
+          "short_id": "245111ae772590c2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "香港aws直连🇭🇰",
-      "server": "xghh.jdzyym.sbs",
-      "server_port": 13954,
+      "server": "hhki.jdzyym.sbs",
+      "server_port": 13009,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -111,16 +111,16 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "biKvBHvKKJJmUEyQnL6ylZlcvcbZcmzASHpewruZNTo",
-          "short_id": "b0976eed"
+          "public_key": "P4H7aVxHQJr6-PWQu57YeQBL9wIOEJTx-4e9F2IdtFg",
+          "short_id": "245111ae772590c2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "新加坡aws直连🇸🇬",
-      "server": "13.229.146.29",
-      "server_port": 55941,
+      "server": "cbsg.jdzyym.sbs",
+      "server_port": 55980,
       "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -132,8 +132,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "HAqf1WqWvNQwr6o6h_WjhOOa3E-mPDZ5GA56slNZ1Go",
-          "short_id": "344ceb31"
+          "public_key": "-T4d5GiLpbn8PMsmUfaKQ30rXKk-TUblEJfKJ6B27Tg",
+          "short_id": "a4856c4ec2cf44d0"
         }
       }
     },
@@ -155,27 +155,6 @@
           "enabled": true,
           "public_key": "TF7rDG9_FUUasfUEq3jBAUo6WO4e893Me5BvUd27jhs",
           "short_id": "b27329"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "日本直连",
-      "server": "3.112.53.101",
-      "server_port": 60031,
-      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.lamer.com.hk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VSz1UQZtAKaV1S78kh7HkUDRrZsjhWxL8rzzbmr7dCg",
-          "short_id": "3b4455867221"
         }
       }
     },
@@ -372,7 +351,7 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN-住宅（20）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 24372,
+      "server_port": 16167,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -474,14 +453,13 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "日本直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本JP01（20）倍",
-        "🇯🇵日本JP02（3）倍"
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾CN-原生01（20）倍",
+        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -499,6 +477,18 @@
     },
     {
       "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本JP01（20）倍",
+        "🇯🇵日本JP02（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "美国(US)",
       "outbounds": [
         "美国🇺🇸直连04",
@@ -507,18 +497,6 @@
         "🇺🇸美国04纽约GPT",
         "🇺🇸美国US01（20）倍",
         "🇺🇸美国US-住宅（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾CN-原生01（20）倍",
-        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     }
