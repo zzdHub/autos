@@ -40,18 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "澳大利亚(AU)",
-        "越南(VN)",
-        "台湾(TW)",
         "香港(HK)",
         "新加坡(SG)",
-        "美国(US)",
-        "德国(DE)",
-        "其他地区",
-        "韩国(KR)",
         "日本(JP)",
+        "美国(US)",
         "中国(CN)",
-        "英国(UK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -318,26 +311,6 @@
     },
     {
       "type": "urltest",
-      "tag": "澳大利亚(AU)",
-      "outbounds": [],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "越南(VN)",
-      "outbounds": [
-        "🇻🇳越南VN01-住宅（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "台湾(TW)",
-      "outbounds": [],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
       "tag": "香港(HK)",
       "outbounds": [
         "🇭🇰香港07",
@@ -364,42 +337,6 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国US01（3）倍",
-        "🇺🇸美国US-住宅（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国DE01（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "其他地区",
-      "outbounds": [
-        "使用前先更新订阅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "🇰🇷韩国KO01（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本01解锁流媒体",
@@ -412,6 +349,18 @@
     },
     {
       "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国US01（3）倍",
+        "🇺🇸美国US-住宅（20）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾原生01",
@@ -419,14 +368,6 @@
         "🇨🇳台湾原生03",
         "🇨🇳台湾CN-原生01（20）倍",
         "🇨🇳台湾CN-住宅（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "英国(UK)",
-      "outbounds": [
-        "🇬🇧英国GB01-住宅（20）倍"
       ],
       "interrupt_exist_connections": true
     }
