@@ -19,7 +19,7 @@ if ($PSVersionTable.PSVersion.Major -lt 7) {
 . "D:\a\autos\autos\ls\AreesSubs.ps1"
 $successSubs = @() 
 
-Write-Host (curl "https://vyy.14kbuy.com/s/66f60e99a9aaac93d9ad6822d3e940ff")
+# Write-Host (curl "https://vyy.14kbuy.com/s/66f60e99a9aaac93d9ad6822d3e940ff")
 
 # 循环测试
 for ($i = 0; $i -lt $subs.Count; $i++) {
@@ -64,7 +64,7 @@ try {
 catch {
     Write-Host "failed to parse the file. please check try agin : $($_.Exception.Message)"
 }
-$deRegex = '(?i)hysteria2'
+$deRegex = ''
 # 根据type和tag 筛选需要删除的tag 
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
