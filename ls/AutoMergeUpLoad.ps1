@@ -40,7 +40,7 @@ for ($i = 0; $i -lt $subs.Count; $i++) {
 }
 # 构造参数数组  -d 参数靠tag 删除节点
 Write-Host "build script parameters....."
-$params = @("-t", $template, "-o", $UnConfig, "-G","selector")
+$params = @("-t", $template, "-o", $UnConfig, "-G","urltest")
 $successSubs | ForEach-Object {
     $params += "-s"
     $params += $_
@@ -64,7 +64,7 @@ try {
 catch {
     Write-Host "failed to parse the file. please check try agin : $($_.Exception.Message)"
 }
-$deRegex = ''
+$deRegex = '(?i)hysteria2|vmess'
 # 根据type和tag 筛选需要删除的tag 
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
