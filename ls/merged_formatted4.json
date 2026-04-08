@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "美国(US)",
-        "新加坡(SG)",
-        "香港(HK)",
         "日本(JP)",
+        "香港(HK)",
+        "新加坡(SG)",
         "中国(CN)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -311,24 +311,13 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "🇺🇸美国US01（3）倍",
-        "🇺🇸美国US-住宅（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "🇸🇬新加坡SG01（20）倍",
-        "🇸🇬新加坡SG02（3）倍"
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本JP01（10）倍",
+        "🇯🇵日本JP02（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -349,13 +338,12 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本JP01（10）倍",
-        "🇯🇵日本JP02（3）倍"
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "🇸🇬新加坡SG01（20）倍",
+        "🇸🇬新加坡SG02（3）倍"
       ],
       "interrupt_exist_connections": true
     },
@@ -368,6 +356,18 @@
         "🇨🇳台湾原生03",
         "🇨🇳台湾CN-原生01（20）倍",
         "🇨🇳台湾CN-住宅（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "🇺🇸美国US01（3）倍",
+        "🇺🇸美国US-住宅（20）倍"
       ],
       "interrupt_exist_connections": true
     }
