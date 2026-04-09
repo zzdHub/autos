@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
-        "新加坡(SG)",
         "日本(JP)",
         "美国(US)",
         "中国(CN)",
+        "新加坡(SG)",
+        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -604,43 +604,6 @@
     },
     {
       "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港1直连",
-        "香港3直连",
-        "🇭🇰香港原生直连04",
-        "🇭🇰香港07",
-        "🇭🇰香港09",
-        "🇭🇰香港08",
-        "香港-hy2",
-        "香港hkt2-hy2",
-        "香港hkt3-hy2",
-        "🇭🇰香港CN01（15）倍",
-        "🇭🇰香港CN02（3）倍",
-        "🇭🇰香港CN-住宅（15）倍",
-        "🇭🇰香港CN-原生（15）倍",
-        "🇭🇰香港CN-原生02（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬直连4",
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "新加坡hy2",
-        "🇸🇬新加坡SG01（20）倍",
-        "🇸🇬新加坡SG02（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "日本🇯🇵直连",
@@ -678,6 +641,43 @@
         "🇨🇳台湾原生03",
         "🇨🇳台湾CN-原生01（15）倍",
         "🇨🇳台湾CN-住宅（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬直连4",
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "新加坡hy2",
+        "🇸🇬新加坡SG01（20）倍",
+        "🇸🇬新加坡SG02（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港1直连",
+        "香港3直连",
+        "🇭🇰香港原生直连04",
+        "🇭🇰香港07",
+        "🇭🇰香港09",
+        "🇭🇰香港08",
+        "香港-hy2",
+        "香港hkt2-hy2",
+        "香港hkt3-hy2",
+        "🇭🇰香港CN01（15）倍",
+        "🇭🇰香港CN02（3）倍",
+        "🇭🇰香港CN-住宅（15）倍",
+        "🇭🇰香港CN-原生（15）倍",
+        "🇭🇰香港CN-原生02（20）倍"
       ],
       "interrupt_exist_connections": true
     }
