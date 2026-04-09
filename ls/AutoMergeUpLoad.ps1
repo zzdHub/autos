@@ -113,17 +113,6 @@ foreach ($o in $subJson.outbounds) {
 $mainJson.outbounds = $subJson.outbounds 
 
 # 最简单的修复
-foreach ($out in $mainJson.outbounds) {
-    if ($out.type -eq "hysteria2") {
-        # 确保tls存在且enabled为true
-        if (-not $out.tls) {
-            $out.tls = @{ enabled = $true; insecure = $true; server_name = $out.server }
-        } elseif (-not $out.tls.enabled) {
-            $out.tls.enabled = $true
-        }
-    }
-}
-
 
 
 #foreach ($out in $mainJson.outbounds) {
@@ -133,6 +122,7 @@ foreach ($out in $mainJson.outbounds) {
   #      }
   #  }
 #}
+
 $mainJson | ConvertTo-Json -Depth 100 | Out-File  D:\a\autos\autos\ls\merged_formatted4.json -Encoding utf8
 Write-Host "处理完成，生成文件"
 
