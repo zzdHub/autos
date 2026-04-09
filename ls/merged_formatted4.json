@@ -40,8 +40,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
         "中国(CN)",
+        "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
         "美国(US)",
@@ -311,6 +311,18 @@
     },
     {
       "type": "urltest",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾原生01",
+        "🇨🇳台湾原生02",
+        "🇨🇳台湾原生03",
+        "🇨🇳台湾CN-原生01（15）倍",
+        "🇨🇳台湾CN-住宅（3）倍"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
       "tag": "香港(HK)",
       "outbounds": [
         "🇭🇰香港07",
@@ -321,18 +333,6 @@
         "🇭🇰香港CN-住宅（15）倍",
         "🇭🇰香港CN-原生（15）倍",
         "🇭🇰香港CN-原生02（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾CN-原生01（15）倍",
-        "🇨🇳台湾CN-住宅（3）倍"
       ],
       "interrupt_exist_connections": true
     },
