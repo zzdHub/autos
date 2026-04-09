@@ -69,7 +69,7 @@ $deRegex = '(?i)hysteria2|vless'
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
     # $_.type -match $deRegex -or
-     if ( $_.type -match $deRegex -or $_.tag -match '(?i)过滤|建议') { return $_ }
+     if ($_.tag -match '(?i)过滤|建议') { return $_ }
 } | Select-Object -ExpandProperty tag
 
 Write-Host "cc: 测试中文就打撒大厦看到拉萨"
