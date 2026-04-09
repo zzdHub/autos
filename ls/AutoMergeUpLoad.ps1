@@ -64,7 +64,7 @@ try {
 catch {
     Write-Host "failed to parse the file. please check try agin : $($_.Exception.Message)"
 }
-$deRegex = '(?i)hysteria2|vless'
+#$deRegex = '(?i)hysteria2|vless'
 # 根据type和tag 筛选需要删除的tag 
 $deleteTags = $subJson.outbounds | 
 Where-Object { 
@@ -111,6 +111,21 @@ foreach ($o in $subJson.outbounds) {
     }
 }
 $mainJson.outbounds = $subJson.outbounds 
+
+# 最简单的修复
+foreach ($out in $mainJson.outbounds) {
+    if ($out.type -eq "hysteria2") {
+        # 确保tls存在且enabled为true
+        if (-not $out.tls) {
+            $out.tls = @{ enabled = $true; insecure = $true; server_name = $out.server }
+        } elseif (-not $out.tls.enabled) {
+            $out.tls.enabled = $true
+        }
+    }
+}
+
+
+
 #foreach ($out in $mainJson.outbounds) {
   #  if ($out.type -eq "urltest") {
     #    if (-not $out.PSObject.Properties["interval"]) {
