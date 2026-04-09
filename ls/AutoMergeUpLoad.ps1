@@ -113,6 +113,17 @@ foreach ($o in $subJson.outbounds) {
 $mainJson.outbounds = $subJson.outbounds 
 
 # 最简单的修复
+foreach ($out in $mainJson.outbounds) {
+    if ($out.type -eq "urltest") {
+        if (-not $out.PSObject.Properties["interval"]) {
+            $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "10m"
+       }
+    #    # 添加测速链接 - 使用 Cloudflare 204 页面测延迟
+        $out | Add-Member -NotePropertyName "url" -NotePropertyValue "https://cp.cloudflare.com/generate_204"
+        # 可选：添加超时设置
+        #$out | Add-Member -NotePropertyName "timeout" -NotePropertyValue "3s"
+    }
+}
 
 
 #foreach ($out in $mainJson.outbounds) {
