@@ -40,11 +40,11 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "中国(CN)",
+        "香港(HK)",
+        "新加坡(SG)",
         "日本(JP)",
         "美国(US)",
-        "中国(CN)",
-        "新加坡(SG)",
-        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -486,7 +486,7 @@
       "type": "shadowsocks",
       "tag": "🇨🇳台湾CN-原生01（15）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 25386,
+      "server_port": 26486,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -494,7 +494,7 @@
       "type": "shadowsocks",
       "tag": "🇨🇳台湾CN-住宅（3）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 41068,
+      "server_port": 26486,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -502,7 +502,7 @@
       "type": "shadowsocks",
       "tag": "🇭🇰香港CN01（15）倍",
       "server": "aaa123.mjaqmh.cn",
-      "server_port": 50722,
+      "server_port": 32309,
       "method": "chacha20-ietf-poly1305",
       "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
     },
@@ -604,36 +604,6 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "日本🇯🇵直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本JP01（15）倍",
-        "🇯🇵日本JP02（3）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸直连h2",
-        "美国🇺🇸直连",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "美国hy2",
-        "🇺🇸美国US01（15）倍",
-        "🇺🇸美国US-住宅（20）倍"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾原生01",
@@ -642,23 +612,9 @@
         "🇨🇳台湾CN-原生01（15）倍",
         "🇨🇳台湾CN-住宅（3）倍"
       ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬直连4",
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "新加坡hy2",
-        "🇸🇬新加坡SG01（20）倍",
-        "🇸🇬新加坡SG02（3）倍"
-      ],
-      "interrupt_exist_connections": true
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
     },
     {
       "type": "urltest",
@@ -679,7 +635,61 @@
         "🇭🇰香港CN-原生（15）倍",
         "🇭🇰香港CN-原生02（20）倍"
       ],
-      "interrupt_exist_connections": true
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬直连4",
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体",
+        "新加坡hy2",
+        "🇸🇬新加坡SG01（20）倍",
+        "🇸🇬新加坡SG02（3）倍"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "日本🇯🇵直连",
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03",
+        "🇯🇵日本JP01（15）倍",
+        "🇯🇵日本JP02（3）倍"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸直连h2",
+        "美国🇺🇸直连",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连04",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT",
+        "美国hy2",
+        "🇺🇸美国US01（15）倍",
+        "🇺🇸美国US-住宅（20）倍"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
     }
   ],
   "route": {
