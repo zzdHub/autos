@@ -41,9 +41,9 @@
       "tag": "select",
       "outbounds": [
         "新加坡(SG)",
-        "美国(US)",
-        "香港(HK)",
         "日本(JP)",
+        "香港(HK)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -460,14 +460,12 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "美国🇺🇸直连",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT"
+        "日本🇯🇵直连",
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -490,12 +488,14 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
+      "tag": "美国(US)",
       "outbounds": [
-        "日本🇯🇵直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03"
+        "美国🇺🇸直连",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连04",
+        "🇺🇸美国02纽约GPT",
+        "🇺🇸美国03纽约GPT",
+        "🇺🇸美国04纽约GPT"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
