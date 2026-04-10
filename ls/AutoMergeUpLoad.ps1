@@ -135,7 +135,7 @@ foreach ($out in $mainJson.outbounds) {
         
         }
     }
-}
+
 
 
 
