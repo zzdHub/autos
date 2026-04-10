@@ -128,12 +128,11 @@ foreach ($out in $mainJson.outbounds) {
 foreach ($out in $mainJson.outbounds) {
     if ($out.type -eq "hysteria2") {
         # 如果没有tls对象，创建
-        if (-not $out.tls) {
-            $out.tls = @{ enabled = $true }
+        if ($out.tls) {
+            Write-Host $out
         } 
         # 如果有tls对象，确保enabled是true
-        elseif (-not $out.tls.enabled -or $out.tls.enabled -ne $true) {
-            $out.tls.enabled = $true
+        
         }
     }
 }
