@@ -127,15 +127,24 @@ foreach ($out in $mainJson.outbounds) {
 
 foreach ($out in $mainJson.outbounds) {
     if ($out.type -eq "hysteria2") {
-        # 如果没有tls对象，创建
+        # 如果存在tls属性
         if ($out.tls) {
-            Write-Host $out
-        } 
-        # 如果有tls对象，确保enabled是true
-        
+            # 此时判断是否有enabled: true
+            if (-not $out.tls.enabled -or $out.tls.enabled -ne $true) {
+                # 如果没有enabled或不是true，就添加/设置为true
+                if (-not $out.tls.PSObject.Properties["enabled"]) {
+                    $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
+                } else {
+                    $out.tls.enabled = $true
+                }
+            }
+        } else {
+            # 如果没有tls属性，创建tls并添加enabled: true
+            $out.tls = New-Object PSObject
+            $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
         }
     }
-
+}
 
 
 
