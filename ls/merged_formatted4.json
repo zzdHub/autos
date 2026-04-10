@@ -40,10 +40,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "中国(CN)",
-        "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
+        "香港(HK)",
         "美国(US)",
         "direct"
       ],
@@ -52,6 +51,48 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "剩余流量：84.28+GB",
+      "server": "pltw.jdzyym.sbs",
+      "server_port": 46670,
+      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zh-hk.vuejs.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Gs56HAh7MmLRREOLosRC54mJFvdm1R7MPGJW4rpjQWc",
+          "short_id": "daa5056af733"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "套餐到期：长期有效",
+      "server": "pltw.jdzyym.sbs",
+      "server_port": 46670,
+      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zh-hk.vuejs.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Gs56HAh7MmLRREOLosRC54mJFvdm1R7MPGJW4rpjQWc",
+          "short_id": "daa5056af733"
+        }
+      }
     },
     {
       "type": "vless",
@@ -214,17 +255,6 @@
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "tls": {
         "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "美国🇺🇸直连h2",
-      "server": "mmgzl.jdzyym.sbs",
-      "server_port": 29310,
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "tls": {
-        "enabled": true,
-        "server_name": "mmgzl.jdzyym.sbs"
       }
     },
     {
@@ -409,208 +439,28 @@
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
-      "type": "shadowsocks",
-      "tag": "使用前先更新订阅",
-      "server": "212.135.40.8",
-      "server_port": 31540,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "美国hy2",
-      "server": "hyusa.coffee1.xyz",
-      "server_port": 33213,
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab",
-      "tls": {
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "新加坡hy2",
-      "server": "akxjb.coffee1.xyz",
-      "server_port": 54665,
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab",
-      "tls": {
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "香港-hy2",
-      "server": "hkhy.coffee1.xyz",
-      "server_port": 34561,
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab",
-      "tls": {
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "香港hkt2-hy2",
-      "server": "hk2.sevenka.top",
-      "server_port": 34561,
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab",
-      "tls": {
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "香港hkt3-hy2",
-      "server": "hk3.sevenka.top",
-      "server_port": 34561,
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab",
-      "tls": {
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵日本JP01（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 14355,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵日本JP02（3）倍",
-      "server": "bbb123.mjaqmh.cn",
-      "server_port": 53943,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇳台湾CN-原生01（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 26486,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇳台湾CN-住宅（3）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 26486,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰香港CN01（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 32309,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰香港CN02（3）倍",
-      "server": "bbb123.mjaqmh.cn",
-      "server_port": 47356,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰香港CN-住宅（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 16167,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰香港CN-原生（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 37750,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰香港CN-原生02（20）倍",
-      "server": "bbb123.mjaqmh.cn",
-      "server_port": 36872,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪德国DE01（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 20880,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸美国US01（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 49691,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸美国US-住宅（20）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 44887,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷韩国KO01（20）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 47586,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬新加坡SG01（20）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 36863,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬新加坡SG02（3）倍",
-      "server": "bbb123.mjaqmh.cn",
-      "server_port": 59850,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇻🇳越南VN01-住宅（15）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 56790,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧英国GB01-住宅（20）倍",
-      "server": "aaa123.mjaqmh.cn",
-      "server_port": 57056,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c9596e39-88e2-44d9-872d-edc18b9809ab"
+      "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬直连4",
+        "🇸🇬新加坡01🔒解锁流媒体",
+        "🇸🇬新加坡02🔒解锁流媒体"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
     },
     {
       "type": "urltest",
-      "tag": "中国(CN)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "🇨🇳台湾原生01",
-        "🇨🇳台湾原生02",
-        "🇨🇳台湾原生03",
-        "🇨🇳台湾CN-原生01（15）倍",
-        "🇨🇳台湾CN-住宅（3）倍"
+        "日本🇯🇵直连",
+        "🇯🇵日本01解锁流媒体",
+        "🇯🇵日本02解锁流媒体",
+        "🇯🇵日本03"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -625,48 +475,7 @@
         "🇭🇰香港原生直连04",
         "🇭🇰香港07",
         "🇭🇰香港09",
-        "🇭🇰香港08",
-        "香港-hy2",
-        "香港hkt2-hy2",
-        "香港hkt3-hy2",
-        "🇭🇰香港CN01（15）倍",
-        "🇭🇰香港CN02（3）倍",
-        "🇭🇰香港CN-住宅（15）倍",
-        "🇭🇰香港CN-原生（15）倍",
-        "🇭🇰香港CN-原生02（20）倍"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬直连4",
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体",
-        "新加坡hy2",
-        "🇸🇬新加坡SG01（20）倍",
-        "🇸🇬新加坡SG02（3）倍"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "日本🇯🇵直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03",
-        "🇯🇵日本JP01（15）倍",
-        "🇯🇵日本JP02（3）倍"
+        "🇭🇰香港08"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -676,16 +485,12 @@
       "type": "urltest",
       "tag": "美国(US)",
       "outbounds": [
-        "美国🇺🇸直连h2",
         "美国🇺🇸直连",
         "美国🇺🇸直连02",
         "美国🇺🇸直连04",
         "🇺🇸美国02纽约GPT",
         "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT",
-        "美国hy2",
-        "🇺🇸美国US01（15）倍",
-        "🇺🇸美国US-住宅（20）倍"
+        "🇺🇸美国04纽约GPT"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
