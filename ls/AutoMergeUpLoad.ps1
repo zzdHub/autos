@@ -90,25 +90,25 @@ foreach ($o in $subJson.outbounds) {
 }
 
 # 清理节点特别少的节点
-$deletenull = foreach ($o in $subJson.outbounds) {
-    if ($o.type -in ("urltest")) {
+#$deletenull = foreach ($o in $subJson.outbounds) {
+  #  if ($o.type -in ("urltest")) {
         # 再次清理urltest 数组小于4 的 踢出去
-        if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
-            $o.tag
-        }       
-    }    
-}
+   #     if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
+  #          $o.tag
+ #       }       
+#    }    
+#}
 #清理urltest
-$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
+#$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
 # 清理select
-foreach ($o in $subJson.outbounds) {
-    if ($o.type -in ("selector") ) {
-        if ($o.outbounds) {
-            $o.outbounds = @($o.outbounds | Where-Object {
-                    $_ -notin $deletenull
-                })
-        }   
-    }
+#foreach ($o in $subJson.outbounds) {
+ #   if ($o.type -in ("selector") ) {
+ #       if ($o.outbounds) {
+  #          $o.outbounds = @($o.outbounds | Where-Object {
+  #                  $_ -notin $deletenull
+ #               })
+  #      }   
+#    }
 }
 $mainJson.outbounds = $subJson.outbounds 
 
