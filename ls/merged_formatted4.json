@@ -40,9 +40,6 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
-        "日本(JP)",
-        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -95,17 +92,6 @@
     },
     {
       "type": "hysteria2",
-      "tag": "台湾家宽直连2",
-      "server": "ggtw.vyunyunnode.top",
-      "server_port": 40776,
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ggtw.vyunyunnode.top"
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "台湾原生直连",
       "server": "ystwzl.vyunyunnode.top",
       "server_port": 47885,
@@ -142,18 +128,6 @@
     },
     {
       "type": "hysteria2",
-      "tag": "香港3直连",
-      "server": "zlhk3.hhwyy.xyz",
-      "server_port": 44001,
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "tls": {
-        "enabled": true,
-        "server_name": "hkzl3.vyunyunnode.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇭🇰香港原生直连04",
       "server": "hkzl4.vyunyunnode.top",
       "server_port": 44003,
@@ -180,17 +154,6 @@
       "tag": "新加坡🇸🇬直连2",
       "server": "assgzl.hhwyy.xyz",
       "server_port": 35561,
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "tls": {
-        "insecure": true,
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "新加坡🇸🇬直连3",
-      "server": "xjjp2.vyunyunnode.top",
-      "server_port": 35563,
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
       "tls": {
         "insecure": true,
@@ -275,136 +238,6 @@
         "server_name": "ymzl.vyunyunnode.top",
         "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬新加坡01🔒解锁流媒体",
-      "server": "wyy6.l8inn.com",
-      "server_port": 45689,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬新加坡02🔒解锁流媒体",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19003,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵日本01解锁流媒体",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵日本02解锁流媒体",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19010,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵日本03",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19018,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇳台湾原生01",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19004,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇳台湾原生02",
-      "server": "wyy6.l8inn.com",
-      "server_port": 21003,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇳台湾原生03",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19019,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸美国02纽约GPT",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19005,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸美国03纽约GPT",
-      "server": "wyy6.l8inn.com",
-      "server_port": 34569,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸美国04纽约GPT",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19020,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬直连4",
-        "🇸🇬新加坡01🔒解锁流媒体",
-        "🇸🇬新加坡02🔒解锁流媒体"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "日本🇯🇵直连",
-        "🇯🇵日本01解锁流媒体",
-        "🇯🇵日本02解锁流媒体",
-        "🇯🇵日本03"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04",
-        "🇺🇸美国02纽约GPT",
-        "🇺🇸美国03纽约GPT",
-        "🇺🇸美国04纽约GPT"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
     }
   ],
   "route": {
