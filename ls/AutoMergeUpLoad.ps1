@@ -109,7 +109,7 @@ foreach ($o in $subJson.outbounds) {
  #               })
   #      }   
 #    }
-}
+#}
 $mainJson.outbounds = $subJson.outbounds 
 
 # 最简单的修复
