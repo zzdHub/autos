@@ -40,15 +40,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "韩国(KR)",
-        "新加坡(SG)",
-        "澳大利亚(AU)",
-        "台湾(TW)",
-        "香港(HK)",
-        "其他地区",
         "日本(JP)",
         "美国(US)",
         "德国(DE)",
+        "澳大利亚(AU)",
+        "台湾(TW)",
+        "韩国(KR)",
+        "其他地区",
+        "香港(HK)",
+        "新加坡(SG)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -250,9 +250,9 @@
     },
     {
       "type": "urltest",
-      "tag": "韩国(KR)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "韩国🇰🇷直连"
+        "日本🇯🇵直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -260,11 +260,20 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
+      "tag": "美国(US)",
       "outbounds": [
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连4"
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连04"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -293,10 +302,9 @@
     },
     {
       "type": "urltest",
-      "tag": "香港(HK)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "香港1直连",
-        "🇭🇰香港原生直连04"
+        "韩国🇰🇷直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -314,9 +322,10 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "日本🇯🇵直连"
+        "香港1直连",
+        "🇭🇰香港原生直连04"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -324,20 +333,11 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连4"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
