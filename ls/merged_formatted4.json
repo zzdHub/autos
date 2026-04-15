@@ -40,15 +40,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "澳大利亚(AU)",
+        "其他地区",
         "韩国(KR)",
         "日本(JP)",
-        "台湾(TW)",
-        "香港(HK)",
-        "德国(DE)",
-        "其他地区",
         "新加坡(SG)",
+        "香港(HK)",
         "美国(US)",
+        "德国(DE)",
+        "台湾(TW)",
+        "澳大利亚(AU)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -59,7 +59,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：75.72 GB",
+      "tag": "剩余流量：75.71 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -454,9 +454,11 @@
     },
     {
       "type": "urltest",
-      "tag": "澳大利亚(AU)",
+      "tag": "其他地区",
       "outbounds": [
-        "澳大利亚直连"
+        "剩余流量：75.71 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -486,12 +488,15 @@
     },
     {
       "type": "urltest",
-      "tag": "台湾(TW)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "台湾家宽直连04",
-        "台湾原生直连",
-        "台湾1商店下载",
-        "台湾2商店下载"
+        "新加坡直连测试",
+        "新加坡直连2",
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬1",
+        "日本🇸🇬1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -512,6 +517,22 @@
     },
     {
       "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸直连测试2",
+        "美国🇺🇸直连测试3",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连04",
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸3gpt"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "德国(DE)",
       "outbounds": [
         "德国直连"
@@ -522,11 +543,12 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "台湾(TW)",
       "outbounds": [
-        "剩余流量：75.72 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "台湾家宽直连04",
+        "台湾原生直连",
+        "台湾1商店下载",
+        "台湾2商店下载"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -534,31 +556,9 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
+      "tag": "澳大利亚(AU)",
       "outbounds": [
-        "新加坡直连测试",
-        "新加坡直连2",
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬1",
-        "日本🇸🇬1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸直连测试2",
-        "美国🇺🇸直连测试3",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04",
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸3gpt"
+        "澳大利亚直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
