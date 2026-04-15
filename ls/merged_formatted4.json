@@ -41,14 +41,14 @@
       "tag": "select",
       "outbounds": [
         "台湾(TW)",
-        "其他地区",
-        "澳大利亚(AU)",
         "韩国(KR)",
         "香港(HK)",
+        "德国(DE)",
+        "澳大利亚(AU)",
+        "其他地区",
         "新加坡(SG)",
         "日本(JP)",
         "美国(US)",
-        "德国(DE)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -261,9 +261,30 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "HKT2原生直连"
+        "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港1直连",
+        "🇭🇰香港原生直连04"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -281,20 +302,9 @@
     },
     {
       "type": "urltest",
-      "tag": "韩国(KR)",
+      "tag": "其他地区",
       "outbounds": [
-        "韩国🇰🇷直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港1直连",
-        "🇭🇰香港原生直连04"
+        "HKT2原生直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -328,16 +338,6 @@
       "outbounds": [
         "美国🇺🇸直连02",
         "美国🇺🇸直连04"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
