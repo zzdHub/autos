@@ -40,15 +40,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
-        "德国(DE)",
-        "澳大利亚(AU)",
-        "日本(JP)",
-        "台湾(TW)",
-        "美国(US)",
         "其他地区",
         "韩国(KR)",
+        "日本(JP)",
         "新加坡(SG)",
+        "台湾(TW)",
+        "美国(US)",
+        "德国(DE)",
+        "香港(HK)",
+        "澳大利亚(AU)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -59,7 +59,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：73.06 GB",
+      "tag": "剩余流量：72.69 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -454,12 +454,11 @@
     },
     {
       "type": "urltest",
-      "tag": "香港(HK)",
+      "tag": "其他地区",
       "outbounds": [
-        "香港1直连",
-        "🇭🇰香港原生直连04",
-        "香港🇭🇰",
-        "香港🇭🇰2"
+        "剩余流量：72.69 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -467,19 +466,10 @@
     },
     {
       "type": "urltest",
-      "tag": "德国(DE)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "德国直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "澳大利亚(AU)",
-      "outbounds": [
-        "澳大利亚直连"
+        "韩国直连2",
+        "韩国🇰🇷直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -491,6 +481,22 @@
       "outbounds": [
         "yy日本直连测试",
         "日本🇯🇵直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "新加坡直连测试",
+        "新加坡直连2",
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬1",
+        "日本🇸🇬1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -527,11 +533,9 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "德国(DE)",
       "outbounds": [
-        "剩余流量：73.06 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -539,10 +543,12 @@
     },
     {
       "type": "urltest",
-      "tag": "韩国(KR)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "韩国直连2",
-        "韩国🇰🇷直连"
+        "香港1直连",
+        "🇭🇰香港原生直连04",
+        "香港🇭🇰",
+        "香港🇭🇰2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -550,15 +556,9 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
+      "tag": "澳大利亚(AU)",
       "outbounds": [
-        "新加坡直连测试",
-        "新加坡直连2",
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬1",
-        "日本🇸🇬1"
+        "澳大利亚直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
