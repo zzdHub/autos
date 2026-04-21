@@ -40,15 +40,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "澳大利亚(AU)",
-        "其他地区",
+        "韩国(KR)",
+        "台湾(TW)",
         "香港(HK)",
         "美国(US)",
         "德国(DE)",
-        "韩国(KR)",
+        "澳大利亚(AU)",
+        "越南(VN)",
         "日本(JP)",
         "新加坡(SG)",
-        "台湾(TW)",
+        "其他地区",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -59,7 +60,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：64.78 GB",
+      "tag": "剩余流量：64.48 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -382,7 +383,7 @@
     },
     {
       "type": "anytls",
-      "tag": "新加坡🇸🇬1",
+      "tag": "新加坡🇸🇬1解锁",
       "server": "wyy6.l8inn.com",
       "server_port": 26630,
       "tls": {
@@ -465,10 +466,23 @@
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
     },
     {
+      "type": "anytls",
+      "tag": "越南1",
+      "server": "wyy6.l8inn.com",
+      "server_port": 35771,
+      "tls": {
+        "enabled": true,
+        "server_name": "ynjd.jdsyym.xyz",
+        "insecure": true
+      },
+      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
+    },
+    {
       "type": "urltest",
-      "tag": "澳大利亚(AU)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "澳大利亚直连"
+        "韩国直连2",
+        "韩国🇰🇷直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -476,11 +490,12 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "台湾(TW)",
       "outbounds": [
-        "剩余流量：64.78 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "台湾家宽直连04",
+        "台湾原生直连",
+        "台湾1商店下载",
+        "台湾2商店下载"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -528,10 +543,19 @@
     },
     {
       "type": "urltest",
-      "tag": "韩国(KR)",
+      "tag": "澳大利亚(AU)",
       "outbounds": [
-        "韩国直连2",
-        "韩国🇰🇷直连"
+        "澳大利亚直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "越南(VN)",
+      "outbounds": [
+        "越南1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -558,7 +582,7 @@
         "新加坡🇸🇬直连",
         "新加坡🇸🇬直连2",
         "新加坡🇸🇬直连3",
-        "新加坡🇸🇬1"
+        "新加坡🇸🇬1解锁"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -566,12 +590,11 @@
     },
     {
       "type": "urltest",
-      "tag": "台湾(TW)",
+      "tag": "其他地区",
       "outbounds": [
-        "台湾家宽直连04",
-        "台湾原生直连",
-        "台湾1商店下载",
-        "台湾2商店下载"
+        "剩余流量：64.48 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
