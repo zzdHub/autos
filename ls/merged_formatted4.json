@@ -41,14 +41,14 @@
       "tag": "select",
       "outbounds": [
         "德国(DE)",
-        "其他地区",
+        "澳大利亚(AU)",
         "韩国(KR)",
         "新加坡(SG)",
-        "澳大利亚(AU)",
-        "越南(VN)",
-        "日本(JP)",
         "台湾(TW)",
         "香港(HK)",
+        "越南(VN)",
+        "其他地区",
+        "日本(JP)",
         "美国(US)",
         "direct"
       ],
@@ -513,11 +513,9 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "澳大利亚(AU)",
       "outbounds": [
-        "剩余流量：64.48 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "澳大利亚直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -552,38 +550,6 @@
     },
     {
       "type": "urltest",
-      "tag": "澳大利亚(AU)",
-      "outbounds": [
-        "澳大利亚直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "越南(VN)",
-      "outbounds": [
-        "越南1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "yy日本直连测试",
-        "日本🇯🇵直连",
-        "日本🇯🇵1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "台湾(TW)",
       "outbounds": [
         "台湾家宽直连04",
@@ -605,6 +571,40 @@
         "香港🇭🇰",
         "香港🇭🇰2",
         "香港🇭🇰3"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "越南(VN)",
+      "outbounds": [
+        "越南1"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "其他地区",
+      "outbounds": [
+        "剩余流量：64.48 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "yy日本直连测试",
+        "日本🇯🇵直连",
+        "日本🇯🇵1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
