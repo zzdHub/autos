@@ -40,16 +40,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "德国(DE)",
-        "澳大利亚(AU)",
         "韩国(KR)",
+        "日本(JP)",
+        "美国(US)",
+        "德国(DE)",
+        "越南(VN)",
         "新加坡(SG)",
         "台湾(TW)",
         "香港(HK)",
-        "越南(VN)",
+        "澳大利亚(AU)",
         "其他地区",
-        "日本(JP)",
-        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -60,7 +60,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：64.48 GB",
+      "tag": "剩余流量：64.05 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -503,6 +503,45 @@
     },
     {
       "type": "urltest",
+      "tag": "韩国(KR)",
+      "outbounds": [
+        "韩国直连2",
+        "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "yy日本直连测试",
+        "日本🇯🇵直连",
+        "日本🇯🇵1"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸直连测试2",
+        "美国🇺🇸直连测试3",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连04",
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸3gpt"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "德国(DE)",
       "outbounds": [
         "德国直连"
@@ -513,20 +552,9 @@
     },
     {
       "type": "urltest",
-      "tag": "澳大利亚(AU)",
+      "tag": "越南(VN)",
       "outbounds": [
-        "澳大利亚直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "韩国直连2",
-        "韩国🇰🇷直连"
+        "越南1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -578,9 +606,9 @@
     },
     {
       "type": "urltest",
-      "tag": "越南(VN)",
+      "tag": "澳大利亚(AU)",
       "outbounds": [
-        "越南1"
+        "澳大利亚直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -590,37 +618,9 @@
       "type": "urltest",
       "tag": "其他地区",
       "outbounds": [
-        "剩余流量：64.48 GB",
+        "剩余流量：64.05 GB",
         "套餐到期：长期有效",
         "HKT2原生直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "日本(JP)",
-      "outbounds": [
-        "yy日本直连测试",
-        "日本🇯🇵直连",
-        "日本🇯🇵1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸直连测试2",
-        "美国🇺🇸直连测试3",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连04",
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸3gpt"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
