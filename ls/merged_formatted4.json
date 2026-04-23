@@ -41,12 +41,12 @@
       "tag": "select",
       "outbounds": [
         "台湾(TW)",
-        "德国(DE)",
+        "美国(US)",
         "越南(VN)",
         "其他地区",
         "韩国(KR)",
         "香港(HK)",
-        "美国(US)",
+        "德国(DE)",
         "日本(JP)",
         "新加坡(SG)",
         "direct"
@@ -59,7 +59,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：63.97 GB",
+      "tag": "剩余流量：63.96 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -496,9 +496,14 @@
     },
     {
       "type": "urltest",
-      "tag": "德国(DE)",
+      "tag": "美国(US)",
       "outbounds": [
-        "德国直连"
+        "美国🇺🇸直连测试2",
+        "美国🇺🇸直连测试3",
+        "美国🇺🇸直连02",
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸3gpt"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -519,7 +524,7 @@
       "type": "urltest",
       "tag": "其他地区",
       "outbounds": [
-        "剩余流量：63.97 GB",
+        "剩余流量：63.96 GB",
         "套餐到期：长期有效",
         "HKT2原生直连"
       ],
@@ -555,14 +560,9 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
+      "tag": "德国(DE)",
       "outbounds": [
-        "美国🇺🇸直连测试2",
-        "美国🇺🇸直连测试3",
-        "美国🇺🇸直连02",
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸3gpt"
+        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
