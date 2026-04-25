@@ -42,12 +42,12 @@
       "outbounds": [
         "其他地区",
         "韩国(KR)",
+        "台湾(TW)",
+        "香港(HK)",
         "日本(JP)",
         "新加坡(SG)",
-        "台湾(TW)",
         "美国(US)",
         "德国(DE)",
-        "香港(HK)",
         "越南(VN)",
         "direct"
       ],
@@ -59,7 +59,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：60.4 GB",
+      "tag": "剩余流量：59.29 GB",
       "server": "yyhg.jdsyym.xyz",
       "server_port": 53321,
       "tls": {
@@ -508,7 +508,7 @@
       "type": "urltest",
       "tag": "其他地区",
       "outbounds": [
-        "剩余流量：60.4 GB",
+        "剩余流量：59.29 GB",
         "套餐到期：长期有效",
         "HKT2原生直连"
       ],
@@ -522,6 +522,35 @@
       "outbounds": [
         "韩国直连2",
         "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "台湾(TW)",
+      "outbounds": [
+        "台湾家宽直连04",
+        "台湾原生直连",
+        "台湾测试",
+        "台湾1商店下载",
+        "台湾2商店下载"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港1直连",
+        "香港🇭🇰hkt3直连",
+        "🇭🇰香港原生直连04",
+        "香港🇭🇰",
+        "香港🇭🇰2",
+        "香港🇭🇰3"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -556,20 +585,6 @@
     },
     {
       "type": "urltest",
-      "tag": "台湾(TW)",
-      "outbounds": [
-        "台湾家宽直连04",
-        "台湾原生直连",
-        "台湾测试",
-        "台湾1商店下载",
-        "台湾2商店下载"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "美国(US)",
       "outbounds": [
         "美国🇺🇸直连测试2",
@@ -590,21 +605,6 @@
       "tag": "德国(DE)",
       "outbounds": [
         "德国直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港1直连",
-        "香港🇭🇰hkt3直连",
-        "🇭🇰香港原生直连04",
-        "香港🇭🇰",
-        "香港🇭🇰2",
-        "香港🇭🇰3"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
