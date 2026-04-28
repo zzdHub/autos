@@ -40,15 +40,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
+        "德国(DE)",
+        "越南(VN)",
         "台湾(TW)",
         "香港(HK)",
-        "美国(US)",
-        "德国(DE)",
         "其他地区",
         "韩国(KR)",
         "日本(JP)",
-        "越南(VN)",
+        "新加坡(SG)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -494,16 +494,20 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
+      "tag": "德国(DE)",
       "outbounds": [
-        "新加坡直连测试",
-        "新加坡直连2",
-        "新加坡🇸🇬直连",
-        "新加坡🇸🇬直连2",
-        "新加坡🇸🇬直连3",
-        "新加坡🇸🇬1解锁",
-        "新加坡🇸🇬2解锁",
-        "新加坡🇸🇬3"
+        "德国直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "越南(VN)",
+      "outbounds": [
+        "越南1",
+        "越南2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -531,33 +535,6 @@
         "香港🇭🇰",
         "香港🇭🇰2",
         "香港🇭🇰3"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸直连测试2",
-        "美国🇺🇸直连测试3",
-        "美国🇺🇸直连测试4",
-        "美国🇺🇸直连02",
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸3gpt",
-        "美国🇺🇸4gpt"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -599,10 +576,33 @@
     },
     {
       "type": "urltest",
-      "tag": "越南(VN)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "越南1",
-        "越南2"
+        "新加坡直连测试",
+        "新加坡直连2",
+        "新加坡🇸🇬直连",
+        "新加坡🇸🇬直连2",
+        "新加坡🇸🇬直连3",
+        "新加坡🇸🇬1解锁",
+        "新加坡🇸🇬2解锁",
+        "新加坡🇸🇬3"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸直连测试2",
+        "美国🇺🇸直连测试3",
+        "美国🇺🇸直连测试4",
+        "美国🇺🇸直连02",
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸3gpt",
+        "美国🇺🇸4gpt"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
