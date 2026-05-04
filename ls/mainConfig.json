@@ -1,6 +1,7 @@
 {
   "log": {
-    "disabled":true
+    "disabled":true,
+    "level":"error"
   },
   "dns": {
     "servers": [
