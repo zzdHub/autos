@@ -1,5 +1,7 @@
 {
-  "log": {},
+  "log": {
+    "disabled":true
+  },
   "dns": {
     "servers": [
       {
@@ -8,13 +10,6 @@
         "server": "223.5.5.5",
         "server_port": 53
       },
-    //  {
-      //  "type": "https",
-    //    "tag": "Remote-DNS",
-    //    "detour": "select",
-    //    "server": "dns.google"
-   //   },
-
      {
         "tag": "Remote-DNS",
         "type": "tls",
@@ -22,18 +17,6 @@
 "domain_resolver": "Local-DNS",
    "detour": "select"
       }
-//{
- // "type": "tls",
-//  "tag": "Remote-DNS",
- //  "server": "dns.google",
- // "server_port": 853,
-//  "domain_resolver": "Local-DNS"
-//}
-
-
-
-
-
     ],
     "rules": [
       {
