@@ -1,21 +1,48 @@
 {
-  "log": {
-    "disabled": true,
-    "level": "error"
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "type": "udp",
+        "tag": "Local-DNS",
+        "server": "223.5.5.5",
+        "server_port": 53
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "server": "dns.google",
+        "domain_resolver": "Local-DNS",
+        "detour": "select"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": "GeoSite-CN",
+        "server": "Local-DNS"
+      },
+      {
+        "domain_suffix": [
+          "google.com",
+          "youtube.com",
+          "googleapis.com",
+          "twitter.com",
+          "x.com"
+        ],
+        "server": "Remote-DNS"
+      }
+    ],
+    "final": "Remote-DNS",
+    "independent_cache": true
   },
   "inbounds": [
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "",
-      "address": [
-        "172.18.0.1/30"
-      ],
       "mtu": 1420,
+      "address": "172.18.0.1/30",
       "auto_route": true,
       "strict_route": true,
-      "endpoint_independent_nat": false,
-      "stack": "system",
       "include_package": [
         "org.telegram.messenger",
         "com.ichi2.anki",
@@ -32,7 +59,8 @@
         "com.innologica.inoreader",
         "com.theotino.chinadaily",
         "com.twitter.android"
-      ]
+      ],
+      "stack": "system"
     }
   ],
   "outbounds": [
@@ -40,15 +68,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "其他地区",
-        "新加坡(SG)",
-        "韩国(KR)",
-        "德国(DE)",
         "香港(HK)",
+        "新加坡(SG)",
         "日本(JP)",
-        "台湾(TW)",
         "美国(US)",
         "越南(VN)",
+        "韩国(KR)",
+        "德国(DE)",
+        "其他地区",
+        "台湾(TW)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -59,7 +87,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：51.97 GB",
+      "tag": "剩余流量：51.82 GB",
       "server": "wyy6.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -590,11 +618,15 @@
     },
     {
       "type": "urltest",
-      "tag": "其他地区",
+      "tag": "香港(HK)",
       "outbounds": [
-        "剩余流量：51.97 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "香港🇭🇰",
+        "香港🇭🇰1-1电信优化",
+        "香港🇭🇰2",
+        "香港🇭🇰2-2电信优化",
+        "香港🇭🇰3",
+        "🇭🇰香港原生直连04",
+        "香港🇭🇰hkt3直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -619,42 +651,6 @@
     },
     {
       "type": "urltest",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "韩国🇰🇷直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港🇭🇰",
-        "香港🇭🇰1-1电信优化",
-        "香港🇭🇰2",
-        "香港🇭🇰2-2电信优化",
-        "香港🇭🇰3",
-        "🇭🇰香港原生直连04",
-        "香港🇭🇰hkt3直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "日本🇯🇵1",
@@ -663,20 +659,6 @@
         "yy日本直连测试",
         "日本直连aws",
         "日本aws直连2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "台湾(TW)",
-      "outbounds": [
-        "台湾1play下载",
-        "台湾2play下载",
-        "台湾2-2电信优化",
-        "台湾测试",
-        "台湾家宽直连04"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -711,153 +693,159 @@
       "interrupt_exist_connections": true,
       "interval": "10m",
       "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "韩国(KR)",
+      "outbounds": [
+        "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "德国直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "其他地区",
+      "outbounds": [
+        "剩余流量：51.82 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "台湾(TW)",
+      "outbounds": [
+        "台湾1play下载",
+        "台湾2play下载",
+        "台湾2-2电信优化",
+        "台湾测试",
+        "台湾家宽直连04"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
     }
   ],
   "route": {
     "rules": [
       {
-        "action": "hijack-dns",
-        "port": [
-          53
-        ]
+        "port": 53,
+        "action": "hijack-dns"
       },
       {
-        "action": "reject",
-        "protocol": "quic"
+        "protocol": "quic",
+        "action": "reject"
       },
       {
-        "action": "reject",
-        "rule_set": [
-          "Category-Ads"
-        ]
+        "rule_set": "Category-Ads",
+        "action": "reject"
       },
       {
         "package_name": "com.android.vending",
         "outbound": "select"
       },
       {
-        "domain_suffix": [
-          "youtube.com",
-          "googlevideo.com",
-          "ytimg.com",
-          "youtubei.googleapis.com",
-          "google.com",
-          "gstatic.com",
-          "googleapis.com",
-          "twitter.com",
-          "x.com"
-        ],
+        "rule_set": "geosite-youtube",
         "outbound": "select"
       },
       {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-Private"
-        ],
+        "rule_set": "geosite-google",
+        "outbound": "select"
+      },
+      {
+        "rule_set": "category-ads-all",
+        "action": "reject"
+      },
+      {
+        "rule_set": "GeoLocation-!CN",
+        "outbound": "select"
+      },
+      {
+        "rule_set": "GeoSite-Private",
         "outbound": "direct"
       },
       {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-CN"
-        ],
+        "rule_set": "GeoSite-CN",
         "outbound": "direct"
       },
       {
-        "action": "route",
-        "rule_set": [
-          "GeoIP-CN"
-        ],
+        "rule_set": "GeoIP-CN",
         "outbound": "direct"
       }
     ],
     "rule_set": [
       {
+        "type": "remote",
         "tag": "Category-Ads",
-        "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "format": "binary",
         "download_detour": "direct"
       },
       {
+        "type": "remote",
         "tag": "GeoIP-Private",
-        "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
-        "format": "binary",
         "download_detour": "direct"
       },
       {
+        "type": "remote",
         "tag": "GeoSite-Private",
-        "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
-        "format": "binary",
         "download_detour": "direct"
       },
       {
+        "type": "remote",
         "tag": "GeoIP-CN",
-        "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "format": "binary",
         "download_detour": "direct"
       },
       {
+        "type": "remote",
         "tag": "GeoSite-CN",
-        "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "format": "binary",
         "download_detour": "direct"
       },
       {
-        "tag": "GeoLocation-!CN",
         "type": "remote",
+        "tag": "GeoLocation-!CN",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "format": "binary",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-google",
+        "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-google.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-youtube",
+        "url": "https://fastly.jsdelivr.net/gh/Yuu518/sing-box-rules@rule_set/rule_set_site/youtube.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "category-ads-all",
+        "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-category-ads-all.srs",
         "download_detour": "direct"
       }
     ],
-    "default_domain_resolver": {
-      "server": "Local-DNS"
-    },
+    "final": "select",
     "auto_detect_interface": true,
-    "final": "select"
-  },
-  "dns": {
-    "servers": [
-      {
-        "type": "udp",
-        "tag": "Local-DNS",
-        "server": "223.5.5.5",
-        "server_port": 53
-      },
-      {
-        "type": "https",
-        "tag": "Remote-DNS",
-        "server": "dns.google",
-        "detour": "select"
-      }
-    ],
-    "rules": [
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-CN"
-        ],
-        "server": "Local-DNS"
-      },
-      {
-        "domain_suffix": [
-          "google.com",
-          "youtube.com",
-          "googleapis.com",
-          "twitter.com",
-          "x.com"
-        ],
-        "server": "Remote-DNS"
-      }
-    ],
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": true,
-    "final": "Remote-DNS"
+    "default_domain_resolver": "Local-DNS"
   }
 }
