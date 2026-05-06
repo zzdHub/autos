@@ -73,11 +73,11 @@
       "outbounds": [
         "韩国(KR)",
         "德国(DE)",
+        "其他地区",
         "香港(HK)",
         "日本(JP)",
         "台湾(TW)",
         "越南(VN)",
-        "其他地区",
         "新加坡(SG)",
         "美国(US)",
         "direct"
@@ -90,7 +90,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：48.21 GB",
+      "tag": "剩余流量：43.61 GB",
       "server": "wyy6.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -649,6 +649,18 @@
     },
     {
       "type": "urltest",
+      "tag": "其他地区",
+      "outbounds": [
+        "剩余流量：43.61 GB",
+        "套餐到期：长期有效",
+        "HKT2原生直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "香港(HK)",
       "outbounds": [
         "香港🇭🇰",
@@ -697,18 +709,6 @@
         "越南1",
         "越南2",
         "越南2-2电信优化"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "其他地区",
-      "outbounds": [
-        "剩余流量：48.21 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
