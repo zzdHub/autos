@@ -76,11 +76,11 @@
         "新加坡(SG)",
         "台湾(TW)",
         "美国(US)",
-        "越南(VN)",
-        "德国(DE)",
-        "日本(JP)",
         "马来西亚(MY)",
+        "日本(JP)",
+        "越南(VN)",
         "韩国(KR)",
+        "德国(DE)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -721,21 +721,9 @@
     },
     {
       "type": "urltest",
-      "tag": "越南(VN)",
+      "tag": "马来西亚(MY)",
       "outbounds": [
-        "越南1",
-        "越南2",
-        "越南2-2电信优化"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
+        "马来西亚🇲🇾1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -756,9 +744,11 @@
     },
     {
       "type": "urltest",
-      "tag": "马来西亚(MY)",
+      "tag": "越南(VN)",
       "outbounds": [
-        "马来西亚🇲🇾1"
+        "越南1",
+        "越南2",
+        "越南2-2电信优化"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -769,6 +759,16 @@
       "tag": "韩国(KR)",
       "outbounds": [
         "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "德国直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
