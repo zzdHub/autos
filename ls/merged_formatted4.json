@@ -71,16 +71,16 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "美国(US)",
+        "越南(VN)",
+        "韩国(KR)",
+        "德国(DE)",
         "其他地区",
         "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
         "台湾(TW)",
-        "越南(VN)",
         "马来西亚(MY)",
-        "德国(DE)",
-        "美国(US)",
-        "韩国(KR)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -91,7 +91,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：25.3 GB",
+      "tag": "剩余流量：25.08 GB",
       "server": "wyyrb.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -379,7 +379,7 @@
     },
     {
       "type": "anytls",
-      "tag": "越南1",
+      "tag": "越南🇻🇳1",
       "server": "wyyrb.l8inn.com",
       "server_port": 35771,
       "tls": {
@@ -391,7 +391,7 @@
     },
     {
       "type": "anytls",
-      "tag": "越南2",
+      "tag": "越南🇻🇳2",
       "server": "wyyrb.l8inn.com",
       "server_port": 35773,
       "tls": {
@@ -403,7 +403,7 @@
     },
     {
       "type": "anytls",
-      "tag": "越南2-2电信优化",
+      "tag": "越南🇻🇳2-2电信优化",
       "server": "wyy8.l8inn.com",
       "server_port": 35774,
       "tls": {
@@ -553,7 +553,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "德国直连",
+      "tag": "德国🇩🇪直连",
       "server": "dgzl.vyunyunnode.top",
       "server_port": 44088,
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
@@ -571,51 +571,6 @@
       "tls": {
         "enabled": true,
         "server_name": "yytw2.jdsyym.xyz",
-        "insecure": true
-      },
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
-    },
-    {
-      "type": "vless",
-      "tag": "台湾家宽直连04",
-      "server": "pltw.jdzyym.sbs",
-      "server_port": 46670,
-      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Gs56HAh7MmLRREOLosRC54mJFvdm1R7MPGJW4rpjQWc",
-          "short_id": "daa5056af733"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "HKT2原生直连",
-      "server": "hkt.hhwyy.xyz",
-      "server_port": 50066,
-      "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "tls": {
-        "enabled": true,
-        "server_name": "hkzl2.vyunyunnode.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "香港🇭🇰hkt3直连",
-      "server": "xghk.jdzyym.sbs",
-      "server_port": 55621,
-      "tls": {
-        "enabled": true,
-        "server_name": "xghk.jdzyym.sbs",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -654,11 +609,62 @@
     },
     {
       "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸2-2电信优化",
+        "美国🇺🇸3gpt",
+        "美国🇺🇸3-3电信优化",
+        "美国🇺🇸4gpt",
+        "美国🇺🇸直连01",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连03",
+        "美国🇺🇸直连04",
+        "美国🇺🇸直连05"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "越南(VN)",
+      "outbounds": [
+        "越南🇻🇳1",
+        "越南🇻🇳2",
+        "越南🇻🇳2-2电信优化"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "韩国(KR)",
+      "outbounds": [
+        "韩国🇰🇷直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "德国🇩🇪直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "其他地区",
       "outbounds": [
-        "剩余流量：25.3 GB",
-        "套餐到期：长期有效",
-        "HKT2原生直连"
+        "剩余流量：25.08 GB",
+        "套餐到期：长期有效"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -673,8 +679,7 @@
         "香港🇭🇰2",
         "香港🇭🇰2-2电信优化",
         "香港🇭🇰3",
-        "🇭🇰香港原生直连04",
-        "香港🇭🇰hkt3直连"
+        "🇭🇰香港原生直连04"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -718,20 +723,7 @@
         "台湾2play下载",
         "台湾2-2电信优化",
         "台湾测试",
-        "台湾原生直连2",
-        "台湾家宽直连04"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "越南(VN)",
-      "outbounds": [
-        "越南1",
-        "越南2",
-        "越南2-2电信优化"
+        "台湾原生直连2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -742,46 +734,6 @@
       "tag": "马来西亚(MY)",
       "outbounds": [
         "马来西亚🇲🇾1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "德国直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸2-2电信优化",
-        "美国🇺🇸3gpt",
-        "美国🇺🇸3-3电信优化",
-        "美国🇺🇸4gpt",
-        "美国🇺🇸直连01",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连03",
-        "美国🇺🇸直连04",
-        "美国🇺🇸直连05"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "韩国🇰🇷直连"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
