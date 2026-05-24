@@ -72,11 +72,11 @@
       "tag": "select",
       "outbounds": [
         "新加坡(SG)",
-        "台湾(TW)",
-        "中国(CN)",
-        "香港(HK)",
         "日本(JP)",
+        "台湾(TW)",
         "美国(US)",
+        "香港(HK)",
+        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -87,7 +87,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：18.78 GB",
+      "tag": "剩余流量：18.62 GB",
       "server": "wyy5.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -1077,6 +1077,23 @@
     },
     {
       "type": "urltest",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "日本🇯🇵1",
+        "日本🇯🇵1-1电信优化",
+        "日本🇯🇵jp2",
+        "日本🇯🇵直连",
+        "🇯🇵日本aws高速01",
+        "🇯🇵日本aws高速02",
+        "🇯🇵日本-原生01",
+        "🇯🇵日本（专线）01"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "台湾(TW)",
       "outbounds": [
         "台湾1play下载",
@@ -1091,18 +1108,22 @@
     },
     {
       "type": "urltest",
-      "tag": "中国(CN)",
+      "tag": "美国(US)",
       "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳香港hkt原生01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港-hy2",
-        "🇨🇳香港hkt2-hy2",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸2-2电信优化",
+        "美国🇺🇸3gpt",
+        "美国🇺🇸3-3电信优化",
+        "美国🇺🇸4gpt",
+        "美国🇺🇸直连01",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连03",
+        "美国🇺🇸直连04",
+        "🇺🇸美国-住宅",
+        "🇺🇸美国（专线）住宅01",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -1129,39 +1150,18 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "日本🇯🇵1",
-        "日本🇯🇵1-1电信优化",
-        "日本🇯🇵jp2",
-        "日本🇯🇵直连",
-        "🇯🇵日本aws高速01",
-        "🇯🇵日本aws高速02",
-        "🇯🇵日本-原生01",
-        "🇯🇵日本（专线）01"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸2-2电信优化",
-        "美国🇺🇸3gpt",
-        "美国🇺🇸3-3电信优化",
-        "美国🇺🇸4gpt",
-        "美国🇺🇸直连01",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连03",
-        "美国🇺🇸直连04",
-        "🇺🇸美国-住宅",
-        "🇺🇸美国（专线）住宅01",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳香港hkt原生01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港-hy2",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
