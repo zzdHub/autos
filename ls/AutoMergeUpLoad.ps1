@@ -23,24 +23,32 @@ $successSubs = @()
 
 # 循环测试
 for ($i = 0; $i -lt $subs.Count; $i++) {
-    Write-Host "test subs: $($i+1): $($subs[$i])" 
-    # 执行 sub2sing-box.exe，捕获所有输出
-    $output = & .\sub2sing-box.exe convert -s $subs[$i]
-    $exitCode = $LASTEXITCODE
-    if ($exitCode -ne 0 -or $output -match "(?i)error|forbidden|invalid") {
-        Write-Host "sub $($i+1) error" 
-        Write-Host "sub $($i+1) error: $output " 
-        
+   
+$url = $subs[$i]
 
-    }
-    else {
+    Write-Host "test subs: $($i+1): $url"
+
+    $cmd = "curl.exe -L -o NUL -s `"$url`" -w `"%{http_code}`" -H `"User-Agent: sing-box`""
+
+    Write-Host "执行命令:"
+    Write-Host $cmd
+
+    $code = Invoke-Expression $cmd
+
+    Write-Host "$($i+1) $code"
+    
+    if ($code -eq "200") {
         Write-Host "sub $($i+1) successful" 
         $successSubs += $subs[$i]
     }
+    else {
+        Write-Host "sub $($i+1) error: HTTP status code $code" 
+    }
+
 }
 # 构造参数数组  -d 参数靠tag 删除节点
 Write-Host "build script parameters....."
-$params = @("-t", $template, "-o", $UnConfig, "-G","urltest")
+$params = @("-t", $template, "-o", $UnConfig, "-G","urltest","-u","sing_box")
 $successSubs | ForEach-Object {
     $params += "-s"
     $params += $_
@@ -71,9 +79,6 @@ Where-Object {
     # $_.type -match $deRegex -or
      if ($_.tag -match '(?i)过滤|建议') { return $_ }
 } | Select-Object -ExpandProperty tag
-
-Write-Host "cc: 测试中文就打撒大厦看到拉萨"
-Write-Host "cc: $($deleteTags)"
 
 # ====== 删除外层的不符合节点 ======
 $subJson.outbounds = $subJson.outbounds | Where-Object {
