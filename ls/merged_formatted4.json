@@ -74,9 +74,9 @@
         "中国(CN)",
         "香港(HK)",
         "新加坡(SG)",
-        "台湾(TW)",
         "美国(US)",
         "日本(JP)",
+        "台湾(TW)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -87,7 +87,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：17.97 GB",
+      "tag": "剩余流量：17.77 GB",
       "server": "wyy5.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -140,7 +140,7 @@
       "server_port": 19751,
       "tls": {
         "enabled": true,
-        "server_name": "acxg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -200,7 +200,7 @@
       "server_port": 26630,
       "tls": {
         "enabled": true,
-        "server_name": "jxjp.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -296,7 +296,7 @@
       "server_port": 35710,
       "tls": {
         "enabled": true,
-        "server_name": "qqbr.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -1115,20 +1115,6 @@
     },
     {
       "type": "urltest",
-      "tag": "台湾(TW)",
-      "outbounds": [
-        "台湾1play下载",
-        "台湾2play下载",
-        "台湾2-2电信优化",
-        "台湾测试",
-        "台湾原生直连2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "美国(US)",
       "outbounds": [
         "美国🇺🇸1gpt",
@@ -1162,6 +1148,20 @@
         "🇯🇵日本aws高速02",
         "🇯🇵日本-原生01",
         "🇯🇵日本（专线）01"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "台湾(TW)",
+      "outbounds": [
+        "台湾1play下载",
+        "台湾2play下载",
+        "台湾2-2电信优化",
+        "台湾测试",
+        "台湾原生直连2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
