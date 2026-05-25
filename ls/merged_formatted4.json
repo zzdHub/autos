@@ -71,12 +71,12 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "中国(CN)",
+        "香港(HK)",
         "新加坡(SG)",
         "台湾(TW)",
         "美国(US)",
-        "中国(CN)",
         "日本(JP)",
-        "香港(HK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -87,7 +87,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：18.62 GB",
+      "tag": "剩余流量：17.97 GB",
       "server": "wyy5.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -1055,6 +1055,44 @@
     },
     {
       "type": "urltest",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳香港hkt原生01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港-hy2",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港🇭🇰",
+        "香港🇭🇰1-1电信优化",
+        "香港🇭🇰2",
+        "香港🇭🇰2-2电信优化",
+        "香港🇭🇰3",
+        "香港🇭🇰4",
+        "香港🇭🇰4-4电信优化",
+        "🇭🇰香港原生直连",
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港aws高速02"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "新加坡(SG)",
       "outbounds": [
         "新加坡🇸🇬1解锁",
@@ -1114,25 +1152,6 @@
     },
     {
       "type": "urltest",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳香港hkt原生01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港-hy2",
-        "🇨🇳香港hkt2-hy2",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "日本🇯🇵1",
@@ -1143,25 +1162,6 @@
         "🇯🇵日本aws高速02",
         "🇯🇵日本-原生01",
         "🇯🇵日本（专线）01"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港🇭🇰",
-        "香港🇭🇰1-1电信优化",
-        "香港🇭🇰2",
-        "香港🇭🇰2-2电信优化",
-        "香港🇭🇰3",
-        "香港🇭🇰4",
-        "香港🇭🇰4-4电信优化",
-        "🇭🇰香港原生直连",
-        "🇭🇰香港aws高速01",
-        "🇭🇰香港aws高速02"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
