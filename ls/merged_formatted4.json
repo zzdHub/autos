@@ -72,10 +72,10 @@
       "tag": "select",
       "outbounds": [
         "中国(CN)",
-        "新加坡(SG)",
-        "日本(JP)",
         "美国(US)",
         "香港(HK)",
+        "新加坡(SG)",
+        "日本(JP)",
         "台湾(TW)",
         "direct"
       ],
@@ -87,12 +87,12 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：17.03 GB",
+      "tag": "剩余流量：16.94 GB",
       "server": "wyy5.l8inn.com",
       "server_port": 9750,
       "tls": {
         "enabled": true,
-        "server_name": "woxg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -104,7 +104,7 @@
       "server_port": 9750,
       "tls": {
         "enabled": true,
-        "server_name": "woxg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -116,7 +116,7 @@
       "server_port": 9750,
       "tls": {
         "enabled": true,
-        "server_name": "woxg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -176,7 +176,7 @@
       "server_port": 19766,
       "tls": {
         "enabled": true,
-        "server_name": "jusxg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -248,7 +248,7 @@
       "server_port": 32661,
       "tls": {
         "enabled": true,
-        "server_name": "hoxjp.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -272,7 +272,7 @@
       "server_port": 26633,
       "tls": {
         "enabled": true,
-        "server_name": "horb.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -344,7 +344,7 @@
       "server_port": 35790,
       "tls": {
         "enabled": true,
-        "server_name": "flmg.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -356,7 +356,7 @@
       "server_port": 35796,
       "tls": {
         "enabled": true,
-        "server_name": "fius.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -380,7 +380,7 @@
       "server_port": 35791,
       "tls": {
         "enabled": true,
-        "server_name": "fjmgu.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -404,7 +404,7 @@
       "server_port": 35698,
       "tls": {
         "enabled": true,
-        "server_name": "frgm.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -416,7 +416,7 @@
       "server_port": 35771,
       "tls": {
         "enabled": true,
-        "server_name": "ynjd.jdsyym.xyz",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -428,7 +428,7 @@
       "server_port": 35773,
       "tls": {
         "enabled": true,
-        "server_name": "ymzl.vyunyunnode.top",
+        "server_name": "mpvideo.qpic.cn",
         "insecure": true
       },
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f"
@@ -448,7 +448,7 @@
     {
       "type": "anytls",
       "tag": "美国🇺🇸直连01",
-      "server": "frll.jdsyym.xyz",
+      "server": "wyy6.l8inn.com",
       "server_port": 34678,
       "tls": {
         "enabled": true,
@@ -460,7 +460,7 @@
     {
       "type": "anytls",
       "tag": "美国🇺🇸直连02",
-      "server": "mgcs.jdsyym.xyz",
+      "server": "wyy6.l8inn.com",
       "server_port": 34661,
       "tls": {
         "enabled": true,
@@ -472,7 +472,7 @@
     {
       "type": "anytls",
       "tag": "美国🇺🇸直连03",
-      "server": "zmgcs.jdsyym.xyz",
+      "server": "wyy6.l8inn.com",
       "server_port": 34667,
       "tls": {
         "enabled": true,
@@ -484,7 +484,7 @@
     {
       "type": "anytls",
       "tag": "美国🇺🇸直连04",
-      "server": "frmg.jdsyym.xyz",
+      "server": "wyy6.l8inn.com",
       "server_port": 34669,
       "tls": {
         "enabled": true,
@@ -507,7 +507,7 @@
     },
     {
       "type": "anytls",
-      "tag": "台湾原生直连2",
+      "tag": "台湾原生直连1",
       "server": "yytw2.jdsyym.xyz",
       "server_port": 56610,
       "tls": {
@@ -519,7 +519,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰香港原生直连",
+      "tag": "香港🇭🇰原生直连",
       "server": "hkzl4.vyunyunnode.top",
       "server_port": 44003,
       "password": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
@@ -583,27 +583,6 @@
         "enabled": true,
         "server_name": "dgzl.vyunyunnode.top",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "韩国🇰🇷直连",
-      "server": "hgg1.hhwyy.xyz",
-      "server_port": 33547,
-      "uuid": "bd20e57b-fd07-4b57-894a-2841ad4bd20f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zh-hk.vuejs.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TF7rDG9_FUUasfUEq3jBAUo6WO4e893Me5BvUd27jhs",
-          "short_id": "b27329"
-        }
       }
     },
     {
@@ -1026,6 +1005,46 @@
     },
     {
       "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸2-2电信优化",
+        "美国🇺🇸3gpt",
+        "美国🇺🇸3-3电信优化",
+        "美国🇺🇸4gpt",
+        "美国🇺🇸直连01",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连03",
+        "美国🇺🇸直连04",
+        "🇺🇸美国-住宅",
+        "🇺🇸美国（专线）住宅01",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "香港🇭🇰",
+        "香港🇭🇰1-1电信优化",
+        "香港🇭🇰2",
+        "香港🇭🇰2-2电信优化",
+        "香港🇭🇰3",
+        "香港🇭🇰4",
+        "香港🇭🇰4-4电信优化",
+        "香港🇭🇰原生直连"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "新加坡(SG)",
       "outbounds": [
         "新加坡🇸🇬1解锁",
@@ -1065,52 +1084,12 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸2-2电信优化",
-        "美国🇺🇸3gpt",
-        "美国🇺🇸3-3电信优化",
-        "美国🇺🇸4gpt",
-        "美国🇺🇸直连01",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连03",
-        "美国🇺🇸直连04",
-        "🇺🇸美国-住宅",
-        "🇺🇸美国（专线）住宅01",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "香港🇭🇰",
-        "香港🇭🇰1-1电信优化",
-        "香港🇭🇰2",
-        "香港🇭🇰2-2电信优化",
-        "香港🇭🇰3",
-        "香港🇭🇰4",
-        "香港🇭🇰4-4电信优化",
-        "🇭🇰香港原生直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "台湾(TW)",
       "outbounds": [
         "台湾1play下载",
         "台湾2play下载",
         "台湾2-2电信优化",
-        "台湾原生直连2"
+        "台湾原生直连1"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
