@@ -71,12 +71,12 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "中国(CN)",
-        "美国(US)",
         "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
+        "中国(CN)",
         "台湾(TW)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -87,7 +87,7 @@
     },
     {
       "type": "anytls",
-      "tag": "剩余流量：16.94 GB",
+      "tag": "剩余流量：15.78 GB",
       "server": "wyy5.l8inn.com",
       "server_port": 9750,
       "tls": {
@@ -611,12 +611,60 @@
     },
     {
       "type": "anytls",
+      "tag": "🇸🇬新加坡aws高速01",
+      "server": "awssg.sevenka.top",
+      "server_port": 33296,
+      "tls": {
+        "enabled": true,
+        "server_name": "awssg.sevenka.top",
+        "insecure": true
+      },
+      "password": "ce291f2d-acf0-4b93-aee3-089ab41e7695"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇸🇬新加坡aws高速02",
+      "server": "sg3.sevenka.top",
+      "server_port": 33286,
+      "tls": {
+        "enabled": true,
+        "server_name": "awssg.sevenka.top",
+        "insecure": true
+      },
+      "password": "ce291f2d-acf0-4b93-aee3-089ab41e7695"
+    },
+    {
+      "type": "anytls",
       "tag": "🇸🇬新加坡aws高速03",
       "server": "awssg3.sevenka.top",
       "server_port": 33776,
       "tls": {
         "enabled": true,
         "server_name": "awssg3.sevenka.top",
+        "insecure": true
+      },
+      "password": "ce291f2d-acf0-4b93-aee3-089ab41e7695"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰香港aws高速01",
+      "server": "awshk1.sevenka.top",
+      "server_port": 21788,
+      "tls": {
+        "enabled": true,
+        "server_name": "awshk1.sevenka.top",
+        "insecure": true
+      },
+      "password": "ce291f2d-acf0-4b93-aee3-089ab41e7695"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰香港aws高速02",
+      "server": "awshk2.sevenka.top",
+      "server_port": 21777,
+      "tls": {
+        "enabled": true,
+        "server_name": "awshk2.sevenka.top",
         "insecure": true
       },
       "password": "ce291f2d-acf0-4b93-aee3-089ab41e7695"
@@ -986,48 +1034,6 @@
     },
     {
       "type": "urltest",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳香港hkt原生01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港-hy2",
-        "🇨🇳香港hkt2-hy2",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "美国🇺🇸1gpt",
-        "美国🇺🇸2gpt",
-        "美国🇺🇸2-2电信优化",
-        "美国🇺🇸3gpt",
-        "美国🇺🇸3-3电信优化",
-        "美国🇺🇸4gpt",
-        "美国🇺🇸直连01",
-        "美国🇺🇸直连02",
-        "美国🇺🇸直连03",
-        "美国🇺🇸直连04",
-        "🇺🇸美国-住宅",
-        "🇺🇸美国（专线）住宅01",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "香港(HK)",
       "outbounds": [
         "香港🇭🇰",
@@ -1037,7 +1043,9 @@
         "香港🇭🇰3",
         "香港🇭🇰4",
         "香港🇭🇰4-4电信优化",
-        "香港🇭🇰原生直连"
+        "香港🇭🇰原生直连",
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港aws高速02"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
@@ -1056,6 +1064,8 @@
         "新加坡🇸🇬直连",
         "新加坡🇸🇬直连2",
         "新加坡🇸🇬直连3",
+        "🇸🇬新加坡aws高速01",
+        "🇸🇬新加坡aws高速02",
         "🇸🇬新加坡aws高速03",
         "🇸🇬新加坡-专线01",
         "🇸🇬新加坡-hy2"
@@ -1084,12 +1094,54 @@
     },
     {
       "type": "urltest",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳香港hkt原生01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港-hy2",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "台湾(TW)",
       "outbounds": [
         "台湾1play下载",
         "台湾2play下载",
         "台湾2-2电信优化",
         "台湾原生直连1"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "10m",
+      "url": "https://cp.cloudflare.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "美国🇺🇸1gpt",
+        "美国🇺🇸2gpt",
+        "美国🇺🇸2-2电信优化",
+        "美国🇺🇸3gpt",
+        "美国🇺🇸3-3电信优化",
+        "美国🇺🇸4gpt",
+        "美国🇺🇸直连01",
+        "美国🇺🇸直连02",
+        "美国🇺🇸直连03",
+        "美国🇺🇸直连04",
+        "🇺🇸美国-住宅",
+        "🇺🇸美国（专线）住宅01",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "10m",
