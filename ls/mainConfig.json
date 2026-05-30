@@ -8,8 +8,7 @@
       {
         "type": "udp",
         "tag": "Local-DNS",
-        "server": "223.5.5.5",
-        "server_port": 53
+        "server": "114.114.114.114"
       },
      {
         "tag": "Remote-DNS",
