@@ -121,10 +121,10 @@ $mainJson.outbounds = $subJson.outbounds
 foreach ($out in $mainJson.outbounds) {
     if ($out.type -eq "urltest") {
         if (-not $out.PSObject.Properties["interval"]) {
-            $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "10m"
+            $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "5m"
        }
     #    # 添加测速链接 - 使用 Cloudflare 204 页面测延迟
-        $out | Add-Member -NotePropertyName "url" -NotePropertyValue "https://cp.cloudflare.com/generate_204"
+        $out | Add-Member -NotePropertyName "url" -NotePropertyValue "https://www.gstatic.com/generate_204"
         # 可选：添加超时设置
         #$out | Add-Member -NotePropertyName "timeout" -NotePropertyValue "3s"
     }
