@@ -1051,8 +1051,8 @@
         "🇸🇬新加坡-hy2"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
@@ -1074,8 +1074,8 @@
         "🇺🇸美国拉斯维加斯-hy2"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
@@ -1093,8 +1093,8 @@
         "🇭🇰香港aws高速02"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
@@ -1111,8 +1111,8 @@
         "🇯🇵日本（专线）01"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
@@ -1124,8 +1124,8 @@
         "台湾原生直连1"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
@@ -1143,8 +1143,8 @@
         "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true,
-      "interval": "10m",
-      "url": "https://cp.cloudflare.com/generate_204"
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
     }
   ],
   "route": {
