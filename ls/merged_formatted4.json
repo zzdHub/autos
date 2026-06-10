@@ -70,9 +70,10 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
-        "中国(CN)",
         "美国(US)",
+        "新加坡(SG)",
+        "日本(JP)",
+        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -143,6 +144,30 @@
     },
     {
       "type": "anytls",
+      "tag": "🇭🇰香港aws高速02",
+      "server": "awshk2.sevenka.top",
+      "server_port": 21777,
+      "tls": {
+        "enabled": true,
+        "server_name": "awshk2.sevenka.top",
+        "insecure": true
+      },
+      "password": "3368d605-2d44-419e-94a5-a8b5f119437a"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇯🇵日本aws高速01",
+      "server": "awsjp.sevenka.top",
+      "server_port": 21277,
+      "tls": {
+        "enabled": true,
+        "server_name": "awsjp.sevenka.top",
+        "insecure": true
+      },
+      "password": "3368d605-2d44-419e-94a5-a8b5f119437a"
+    },
+    {
+      "type": "anytls",
       "tag": "🇯🇵日本aws高速02",
       "server": "awsjp3.sevenka.top",
       "server_port": 23455,
@@ -171,6 +196,27 @@
           "enabled": true,
           "public_key": "uW1DNdMfZFmYAa8p4ZO79Trhs1DJv2gNif2hkyrzWmY",
           "short_id": "6ffea621f386"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇳香港hkb家宽01",
+      "server": "hkhkba.jiedddym.com",
+      "server_port": 55556,
+      "uuid": "3368d605-2d44-419e-94a5-a8b5f119437a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q0DjzZnFrg8Ooal_GA6OKDAWf4fgDmzFeb_4b07GCFI",
+          "short_id": "d0bec6cdf8a0"
         }
       }
     },
@@ -482,6 +528,21 @@
     },
     {
       "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国-住宅",
+        "🇺🇸美国高速原生",
+        "🇺🇸美国（专线）住宅01",
+        "🇺🇸美国原生-hy2",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "新加坡(SG)",
       "outbounds": [
         "🇸🇬新加坡aws高速01",
@@ -495,17 +556,12 @@
     },
     {
       "type": "urltest",
-      "tag": "中国(CN)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkt原生01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港-hy2",
-        "🇨🇳香港hkt2-hy2",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
+        "🇯🇵日本aws高速01",
+        "🇯🇵日本aws高速02",
+        "🇯🇵日本-原生01",
+        "🇯🇵日本（专线）01"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
@@ -513,14 +569,18 @@
     },
     {
       "type": "urltest",
-      "tag": "美国(US)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "🇺🇸美国-住宅",
-        "🇺🇸美国高速原生",
-        "🇺🇸美国（专线）住宅01",
-        "🇺🇸美国原生-hy2",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳香港hkt原生01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港-hy2",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
