@@ -70,9 +70,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "新加坡(SG)",
         "日本(JP)",
         "中国(CN)",
-        "新加坡(SG)",
         "美国(US)",
         "direct"
       ],
@@ -90,18 +90,6 @@
       "tls": {
         "enabled": true,
         "server_name": "aatw.coffee1.xyz",
-        "insecure": true
-      },
-      "password": "e5bcb0fd-c6e8-4035-b55f-be508796f685"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸美国-住宅",
-      "server": "akmgzz.jiedddym.com",
-      "server_port": 30296,
-      "tls": {
-        "enabled": true,
-        "server_name": "aausa.coffee1.xyz",
         "insecure": true
       },
       "password": "e5bcb0fd-c6e8-4035-b55f-be508796f685"
@@ -390,27 +378,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸美国（专线）住宅01",
-      "server": "53hk.stmoym.com",
-      "server_port": 24046,
-      "uuid": "e5bcb0fd-c6e8-4035-b55f-be508796f685",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.lamer.com.hk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OFaS9zd0dpGu0BcCvUNT4KFHkZWoD1b0-fxrBWE1cx0",
-          "short_id": "0b88564dfe13c094"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇬🇧英国-住宅01",
       "server": "53hk.stmoym.com",
       "server_port": 34790,
@@ -528,6 +495,19 @@
     },
     {
       "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡aws高速01",
+        "🇸🇬新加坡aws高速03",
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本aws高速01",
@@ -560,24 +540,9 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡aws高速01",
-        "🇸🇬新加坡aws高速03",
-        "🇸🇬新加坡-专线01",
-        "🇸🇬新加坡-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "美国(US)",
       "outbounds": [
-        "🇺🇸美国-住宅",
         "🇺🇸美国高速原生",
-        "🇺🇸美国（专线）住宅01",
         "🇺🇸美国原生-hy2",
         "🇺🇸美国迈阿密-hy2",
         "🇺🇸美国拉斯维加斯-hy2"
