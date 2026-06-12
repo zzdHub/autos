@@ -70,10 +70,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "中国(CN)",
         "新加坡(SG)",
         "美国(US)",
-        "中国(CN)",
-        "日本(JP)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -126,30 +125,6 @@
       "tls": {
         "enabled": true,
         "server_name": "awssg3.sevenka.top",
-        "insecure": true
-      },
-      "password": "e5bcb0fd-c6e8-4035-b55f-be508796f685"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰香港aws高速01",
-      "server": "awshk1.sevenka.top",
-      "server_port": 21788,
-      "tls": {
-        "enabled": true,
-        "server_name": "awshk1.sevenka.top",
-        "insecure": true
-      },
-      "password": "e5bcb0fd-c6e8-4035-b55f-be508796f685"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇯🇵日本aws高速01",
-      "server": "awsjp.sevenka.top",
-      "server_port": 21277,
-      "tls": {
-        "enabled": true,
-        "server_name": "awsjp.sevenka.top",
         "insecure": true
       },
       "password": "e5bcb0fd-c6e8-4035-b55f-be508796f685"
@@ -516,33 +491,6 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡aws高速01",
-        "🇸🇬新加坡aws高速02",
-        "🇸🇬新加坡aws高速03",
-        "🇸🇬新加坡-专线01",
-        "🇸🇬新加坡-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国高速原生",
-        "🇺🇸美国原生-hy2",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾-住宅",
@@ -563,12 +511,26 @@
     },
     {
       "type": "urltest",
-      "tag": "日本(JP)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "🇯🇵日本aws高速01",
-        "🇯🇵日本aws高速02",
-        "🇯🇵日本-原生01",
-        "🇯🇵日本（专线）01"
+        "🇸🇬新加坡aws高速01",
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国高速原生",
+        "🇺🇸美国原生-hy2",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
