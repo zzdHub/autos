@@ -70,11 +70,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
-        "台湾(TW)",
-        "美国(US)",
+        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -85,251 +83,333 @@
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰",
-      "server": "wyy5.l8inn.com",
-      "server_port": 39750,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇨🇳台湾-住宅",
+      "server": "aatw.coffee1.xyz",
+      "server_port": 30096,
+      "tls": {
+        "enabled": true,
+        "server_name": "aatw.coffee1.xyz",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰1-1电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 29756,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇭🇰香港aws高速01",
+      "server": "hkawsboboa.jiedddym.com",
+      "server_port": 33297,
+      "tls": {
+        "enabled": true,
+        "server_name": "awssg.sevenka.top",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰2",
-      "server": "xiaoqi.l8inn.com",
-      "server_port": 19751,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇸🇬新加坡aws高速02",
+      "server": "xjpawsbobo2.jiedddym.com",
+      "server_port": 33286,
+      "tls": {
+        "enabled": true,
+        "server_name": "awssg.sevenka.top",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰2-2电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 19752,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇸🇬新加坡aws高速03",
+      "server": "xjpawsbobo3.jiedddym.com",
+      "server_port": 33776,
+      "tls": {
+        "enabled": true,
+        "server_name": "awssg3.sevenka.top",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰3",
-      "server": "wyy6.l8inn.com",
-      "server_port": 19755,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇯🇵日本aws高速01",
+      "server": "awsjp.sevenka.top",
+      "server_port": 21277,
+      "tls": {
+        "enabled": true,
+        "server_name": "awsjp.sevenka.top",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰4",
-      "server": "wyy5.l8inn.com",
-      "server_port": 19766,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇯🇵日本aws高速02",
+      "server": "jprbawsbobo2.jiedddym.com",
+      "server_port": 23277,
+      "tls": {
+        "enabled": true,
+        "server_name": "awsjp2.sevenka.top",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 香港🇭🇰4-4电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 19767,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "tag": "🇯🇵日本aws高速03",
+      "server": "awsjp1.dnscf2.xyz",
+      "server_port": 23455,
+      "tls": {
+        "enabled": true,
+        "server_name": "awsjp1.dnscf2.xyz",
+        "insecure": true
+      },
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬1解锁",
-      "server": "xiaoqi.l8inn.com",
-      "server_port": 26630,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇨🇳香港htk高速01",
+      "server": "hkthka.jiedddym.com",
+      "server_port": 13768,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uW1DNdMfZFmYAa8p4ZO79Trhs1DJv2gNif2hkyrzWmY",
+          "short_id": "6ffea621f386"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬1-1电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 26631,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇨🇳香港hkb家宽01",
+      "server": "hkhkba.jiedddym.com",
+      "server_port": 55556,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q0DjzZnFrg8Ooal_GA6OKDAWf4fgDmzFeb_4b07GCFI",
+          "short_id": "d0bec6cdf8a0"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬2解锁",
-      "server": "wyy6.l8inn.com",
-      "server_port": 26636,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇰🇷韩国aws01",
+      "server": "hgbzawsboboa.jiedddym.com",
+      "server_port": 45646,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H7i_OFAdysff7xc0vE_IiBn-G5CPjXI8mlZjtR3nsBQ",
+          "short_id": "04b9c6263a2f4b5e"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬2-2电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 26639,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇨🇳台湾-住宅02",
+      "server": "aktwzz.jiedddym.com",
+      "server_port": 56455,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "01e0R1fDJ9nQHBeQKnP8_Yyl03njd3WSsSCJYrS7FwY",
+          "short_id": "ffe40bd69ab2f848"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬3解锁ai",
-      "server": "wyy5.l8inn.com",
-      "server_port": 32661,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇨🇳香港-专线01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 42896,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Lff3UGrC1porayJJU-QhztTrrLk_HnQ91bMuizKe0RY",
+          "short_id": "bc8324bf23b5d9"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇬 新加坡🇸🇬3-3电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 32662,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇯🇵日本-原生01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 16319,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wy4zNPuD5JiJGzkDYYN8sijBB5hflIg_7BSjcR0HlC8",
+          "short_id": "e6ac5eeac1"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇯🇵 日本🇯🇵1",
-      "server": "wyy5.l8inn.com",
-      "server_port": 26633,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇩🇪德国（转线）01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 21531,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA",
+          "short_id": "383e976fcf298029"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇯🇵 日本🇯🇵1-1电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 26635,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "新加坡-媒体流01",
+      "server": "xjpjus.jiedddym.com",
+      "server_port": 14352,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw",
+          "short_id": "461b0192ec23b6"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇯🇵 日本🇯🇵2",
-      "server": "xiaoqi.l8inn.com",
-      "server_port": 35710,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇸🇬新加坡-专线01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 52353,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw",
+          "short_id": "461b0192ec23b6"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 台湾1play下载",
-      "server": "wyy6.l8inn.com",
-      "server_port": 35714,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇯🇵日本（专线）01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 34610,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1_LRTe0imlDAWuNuFxCSaFgnQjs9lVtaIItoRRy-T1I",
+          "short_id": "36d27cb9c90fc8"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 台湾2play下载",
-      "server": "wyy6.l8inn.com",
-      "server_port": 35768,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "vless",
+      "tag": "🇬🇧英国-住宅01",
+      "server": "919191.1yuan.cyou",
+      "server_port": 34790,
+      "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Xgr4KJ2Q43qmFoei-cYu_9NlF8EE03Yf_O558_8aJ2c",
+          "short_id": "166a716b5463319f"
+        }
+      }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 台湾2-2电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 35769,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸1gpt",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35790,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸2gpt",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35796,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸2-2电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 35797,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸3gpt",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35791,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸3-3电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 35792,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸4gpt",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35698,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇻🇳 越南🇻🇳1",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35771,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇻🇳 越南🇻🇳2",
-      "server": "wyy5.l8inn.com",
-      "server_port": 35773,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇻🇳 越南🇻🇳2-2电信优化",
-      "server": "wyy8.l8inn.com",
-      "server_port": 35774,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸直连01",
-      "server": "wyy6.l8inn.com",
-      "server_port": 34678,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸直连02",
-      "server": "wyy6.l8inn.com",
-      "server_port": 34661,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸直连03",
-      "server": "wyy6.l8inn.com",
-      "server_port": 34667,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇺🇸 美国🇺🇸直连04",
-      "server": "wyy6.l8inn.com",
-      "server_port": 34669,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇰🇷 韩国🇰🇷原生直连",
-      "server": "yyhg.jdsyym.xyz",
-      "server_port": 49880,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 台湾原生直连1",
-      "server": "wyy6.zzzyde.xyz",
-      "server_port": 56610,
-      "password": "1410466f-26da-472a-b47f-518ea4756673"
+      "type": "shadowsocks",
+      "tag": "使用前先更新订阅",
+      "server": "212.135.40.8",
+      "server_port": 31540,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 香港🇭🇰原生直连",
-      "server": "hkzl4.vyunyunnode.top",
-      "server_port": 44003,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
+      "tag": "🇨🇳香港hkt2-hy2",
+      "server": "hk2.sevenka.top",
+      "server_port": 34561,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "tls": {
         "insecure": true,
         "enabled": true
@@ -337,13 +417,10 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 香港🇭🇰2原生直连",
-      "server": "hkt.hhwyy.xyz",
-      "server_port": 50066,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
+      "tag": "🇨🇳香港hkt3-hy2",
+      "server": "hk3.sevenka.top",
+      "server_port": 34561,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "tls": {
         "insecure": true,
         "enabled": true
@@ -351,13 +428,10 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡🇸🇬直连",
-      "server": "sgzl1.vyunyunnode.top",
-      "server_port": 44008,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
+      "tag": "🇨🇳香港hkt4-hy2",
+      "server": "hkthka.jiedddym.com",
+      "server_port": 34561,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "tls": {
         "insecure": true,
         "enabled": true
@@ -365,13 +439,10 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡🇸🇬直连2",
-      "server": "assgzl.hhwyy.xyz",
-      "server_port": 35561,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
+      "tag": "🇺🇸美国迈阿密-hy2",
+      "server": "mgmam.jiedddym.com",
+      "server_port": 49490,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "tls": {
         "insecure": true,
         "enabled": true
@@ -379,77 +450,23 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡🇸🇬直连3",
-      "server": "xjjp3.vyunyunnode.top",
-      "server_port": 35569,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
+      "tag": "🇺🇸美国拉斯维加斯-hy2",
+      "server": "mglswjs.jiedddym.com",
+      "server_port": 49490,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "tls": {
         "insecure": true,
         "enabled": true
       }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本🇯🇵直连",
-      "server": "ojpzl1.vyunyunnode.top",
-      "server_port": 44011,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
-      "tls": {
-        "insecure": true,
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国🇩🇪直连",
-      "server": "dgzl.vyunyunnode.top",
-      "server_port": 44088,
-      "obfs": {
-        "type": "none"
-      },
-      "password": "1410466f-26da-472a-b47f-518ea4756673",
-      "tls": {
-        "insecure": true,
-        "enabled": true
-      }
-    },
-    {
-      "type": "urltest",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "🇭🇰 香港🇭🇰",
-        "🇭🇰 香港🇭🇰1-1电信优化",
-        "🇭🇰 香港🇭🇰2",
-        "🇭🇰 香港🇭🇰2-2电信优化",
-        "🇭🇰 香港🇭🇰3",
-        "🇭🇰 香港🇭🇰4",
-        "🇭🇰 香港🇭🇰4-4电信优化",
-        "🇭🇰 香港🇭🇰原生直连",
-        "🇭🇰 香港🇭🇰2原生直连"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
     },
     {
       "type": "urltest",
       "tag": "新加坡(SG)",
       "outbounds": [
-        "🇸🇬 新加坡🇸🇬1解锁",
-        "🇸🇬 新加坡🇸🇬1-1电信优化",
-        "🇸🇬 新加坡🇸🇬2解锁",
-        "🇸🇬 新加坡🇸🇬2-2电信优化",
-        "🇸🇬 新加坡🇸🇬3解锁ai",
-        "🇸🇬 新加坡🇸🇬3-3电信优化",
-        "🇸🇬 新加坡🇸🇬直连",
-        "🇸🇬 新加坡🇸🇬直连2",
-        "🇸🇬 新加坡🇸🇬直连3"
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "新加坡-媒体流01",
+        "🇸🇬新加坡-专线01"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
@@ -459,10 +476,11 @@
       "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
-        "🇯🇵 日本🇯🇵1",
-        "🇯🇵 日本🇯🇵1-1电信优化",
-        "🇯🇵 日本🇯🇵2",
-        "🇯🇵 日本🇯🇵直连"
+        "🇯🇵日本aws高速01",
+        "🇯🇵日本aws高速02",
+        "🇯🇵日本aws高速03",
+        "🇯🇵日本-原生01",
+        "🇯🇵日本（专线）01"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
@@ -470,31 +488,16 @@
     },
     {
       "type": "urltest",
-      "tag": "台湾(TW)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "🇹🇼 台湾1play下载",
-        "🇹🇼 台湾2play下载",
-        "🇹🇼 台湾2-2电信优化",
-        "🇹🇼 台湾原生直连1"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸 美国🇺🇸1gpt",
-        "🇺🇸 美国🇺🇸2gpt",
-        "🇺🇸 美国🇺🇸2-2电信优化",
-        "🇺🇸 美国🇺🇸3gpt",
-        "🇺🇸 美国🇺🇸3-3电信优化",
-        "🇺🇸 美国🇺🇸4gpt",
-        "🇺🇸 美国🇺🇸直连01",
-        "🇺🇸 美国🇺🇸直连02",
-        "🇺🇸 美国🇺🇸直连03",
-        "🇺🇸 美国🇺🇸直连04"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
