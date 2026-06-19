@@ -156,11 +156,11 @@
     {
       "type": "anytls",
       "tag": "🇯🇵日本aws高速03",
-      "server": "awsjp1.dnscf2.xyz",
+      "server": "jprbawsbobo3.jiedddym.com",
       "server_port": 23455,
       "tls": {
         "enabled": true,
-        "server_name": "awsjp1.dnscf2.xyz",
+        "server_name": "jprbawsbobo3.jiedddym.com",
         "insecure": true
       },
       "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68"
@@ -273,7 +273,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵日本-原生01",
-      "server": "53hk.stmoym.com",
+      "server": "919191.1yuan.cyou",
       "server_port": 16319,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -294,7 +294,7 @@
     {
       "type": "vless",
       "tag": "🇩🇪德国（转线）01",
-      "server": "53hk.stmoym.com",
+      "server": "919191.1yuan.cyou",
       "server_port": 21531,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -336,7 +336,7 @@
     {
       "type": "vless",
       "tag": "🇸🇬新加坡-专线01",
-      "server": "53hk.stmoym.com",
+      "server": "919191.1yuan.cyou",
       "server_port": 52353,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -406,17 +406,6 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇳香港hkt2-hy2",
-      "server": "hk2.sevenka.top",
-      "server_port": 34561,
-      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
-      "tls": {
-        "insecure": true,
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇨🇳香港hkt3-hy2",
       "server": "hk3.sevenka.top",
       "server_port": 34561,
@@ -468,7 +457,6 @@
         "🇨🇳香港hkb家宽01",
         "🇨🇳台湾-住宅02",
         "🇨🇳香港-专线01",
-        "🇨🇳香港hkt2-hy2",
         "🇨🇳香港hkt3-hy2",
         "🇨🇳香港hkt4-hy2"
       ],
