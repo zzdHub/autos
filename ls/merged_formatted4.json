@@ -70,9 +70,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "中国(CN)",
         "新加坡(SG)",
         "日本(JP)",
-        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -273,7 +273,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵日本-原生01",
-      "server": "919191.1yuan.cyou",
+      "server": "53hk.stmoym.com",
       "server_port": 16319,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -294,7 +294,7 @@
     {
       "type": "vless",
       "tag": "🇩🇪德国（转线）01",
-      "server": "919191.1yuan.cyou",
+      "server": "53hk.stmoym.com",
       "server_port": 21531,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -336,7 +336,7 @@
     {
       "type": "vless",
       "tag": "🇸🇬新加坡-专线01",
-      "server": "919191.1yuan.cyou",
+      "server": "53hk.stmoym.com",
       "server_port": 52353,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
       "flow": "xtls-rprx-vision",
@@ -461,6 +461,23 @@
     },
     {
       "type": "urltest",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港hkt2-hy2",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "urltest",
       "tag": "新加坡(SG)",
       "outbounds": [
         "🇸🇬新加坡aws高速02",
@@ -481,23 +498,6 @@
         "🇯🇵日本aws高速03",
         "🇯🇵日本-原生01",
         "🇯🇵日本（专线）01"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港hkt2-hy2",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
