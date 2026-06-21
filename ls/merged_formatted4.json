@@ -70,9 +70,9 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
         "日本(JP)",
         "中国(CN)",
+        "新加坡(SG)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -293,7 +293,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪德国（转线）01",
+      "tag": "🇩🇪德国（专线）01",
       "server": "919191.1yuan.cyou",
       "server_port": 21531,
       "uuid": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
@@ -450,19 +450,6 @@
     },
     {
       "type": "urltest",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡aws高速02",
-        "🇸🇬新加坡aws高速03",
-        "新加坡-媒体流01",
-        "🇸🇬新加坡-专线01"
-      ],
-      "interrupt_exist_connections": true,
-      "interval": "5m",
-      "url": "https://www.gstatic.com/generate_204"
-    },
-    {
-      "type": "urltest",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本aws高速01",
@@ -486,6 +473,19 @@
         "🇨🇳香港-专线01",
         "🇨🇳香港hkt3-hy2",
         "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true,
+      "interval": "5m",
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "urltest",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "新加坡-媒体流01",
+        "🇸🇬新加坡-专线01"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
