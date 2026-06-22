@@ -394,6 +394,17 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇸🇬新加坡-hy2",
+      "server": "xjpjus.jiedddym.com",
+      "server_port": 54665,
+      "password": "a71ddf6d-1890-41ee-bccd-28af502c5a68",
+      "tls": {
+        "insecure": true,
+        "enabled": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇨🇳香港hkt3-hy2",
       "server": "hk3.sevenka.top",
       "server_port": 34561,
@@ -443,7 +454,8 @@
         "🇸🇬新加坡aws高速02",
         "🇸🇬新加坡aws高速03",
         "新加坡-媒体流01",
-        "🇸🇬新加坡-专线01"
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
       ],
       "interrupt_exist_connections": true,
       "interval": "5m",
