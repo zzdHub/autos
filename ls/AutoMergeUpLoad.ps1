@@ -74,82 +74,82 @@ catch {
 }
 #$deRegex = '(?i)hysteria2|vless'
 # 根据type和tag 筛选需要删除的tag 
-$deleteTags = $subJson.outbounds | 
-Where-Object { 
-    # $_.type -match $deRegex -or
-     if ($_.tag -match '(?i)过滤|建议') { return $_ }
-} | Select-Object -ExpandProperty tag
+# $deleteTags = $subJson.outbounds | 
+# Where-Object { 
+#     # $_.type -match $deRegex -or
+#      if ($_.tag -match '(?i)过滤|建议') { return $_ }
+# } | Select-Object -ExpandProperty tag
 
-# ====== 删除外层的不符合节点 ======
-$subJson.outbounds = $subJson.outbounds | Where-Object {
-    $_.tag -notin $deleteTags 
-}
+# # ====== 删除外层的不符合节点 ======
+# $subJson.outbounds = $subJson.outbounds | Where-Object {
+#     $_.tag -notin $deleteTags 
+# }
 
-# 删除urltest, select 中的不符合节点 
-foreach ($o in $subJson.outbounds) {
-    if ($o.outbounds) {
-        $o.outbounds = @($o.outbounds | Where-Object {
-                $_ -notin $deleteTags 
-            })
-    }
-}
+# # 删除urltest, select 中的不符合节点 
+# foreach ($o in $subJson.outbounds) {
+#     if ($o.outbounds) {
+#         $o.outbounds = @($o.outbounds | Where-Object {
+#                 $_ -notin $deleteTags 
+#             })
+#     }
+# }
 
-#清理节点特别少的节点
-$deletenull = foreach ($o in $subJson.outbounds) {
-   if ($o.type -in ("urltest")) {
-        #再次清理urltest 数组小于4 的 踢出去
-       if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
-           $o.tag
-       }       
-   }    
-}
-#清理urltest
-$subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
-#清理select
-foreach ($o in $subJson.outbounds) {
-   if ($o.type -in ("selector") ) {
-       if ($o.outbounds) {
-           $o.outbounds = @($o.outbounds | Where-Object {
-                   $_ -notin $deletenull
-               })
-       }   
-   }
-}
-$mainJson.outbounds = $subJson.outbounds 
+# #清理节点特别少的节点
+# $deletenull = foreach ($o in $subJson.outbounds) {
+#    if ($o.type -in ("urltest")) {
+#         #再次清理urltest 数组小于4 的 踢出去
+#        if ($o.outbounds.Count -ge 0 -and $o.outbounds.Count -lt 4) {            
+#            $o.tag
+#        }       
+#    }    
+# }
+# #清理urltest
+# $subJson.outbounds = $subJson.outbounds | Where-Object { $_.tag -notin $deletenull } 
+# #清理select
+# foreach ($o in $subJson.outbounds) {
+#    if ($o.type -in ("selector") ) {
+#        if ($o.outbounds) {
+#            $o.outbounds = @($o.outbounds | Where-Object {
+#                    $_ -notin $deletenull
+#                })
+#        }   
+#    }
+# }
+# $mainJson.outbounds = $subJson.outbounds 
 
-# 最简单的修复
-foreach ($out in $mainJson.outbounds) {
-    if ($out.type -eq "urltest") {
-        if (-not $out.PSObject.Properties["interval"]) {
-            $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "5m"
-       }
-    #    # 添加测速链接 - 使用 Cloudflare 204 页面测延迟
-        $out | Add-Member -NotePropertyName "url" -NotePropertyValue "https://www.gstatic.com/generate_204"
-        # 可选：添加超时设置
-        #$out | Add-Member -NotePropertyName "timeout" -NotePropertyValue "3s"
-    }
-}
+# # 最简单的修复
+# foreach ($out in $mainJson.outbounds) {
+#     if ($out.type -eq "urltest") {
+#         if (-not $out.PSObject.Properties["interval"]) {
+#             $out | Add-Member -NotePropertyName "interval" -NotePropertyValue "5m"
+#        }
+#     #    # 添加测速链接 - 使用 Cloudflare 204 页面测延迟
+#         $out | Add-Member -NotePropertyName "url" -NotePropertyValue "https://www.gstatic.com/generate_204"
+#         # 可选：添加超时设置
+#         #$out | Add-Member -NotePropertyName "timeout" -NotePropertyValue "3s"
+#     }
+# }
 
-foreach ($out in $mainJson.outbounds) {
-    if ($out.type -eq "hysteria2") {
-        # 如果存在tls属性
-        if ($out.tls) {
-            # 此时判断是否有enabled: true
-            if (-not $out.tls.enabled -or $out.tls.enabled -ne $true) {
-                # 如果没有enabled或不是true，就添加/设置为true
-                if (-not $out.tls.PSObject.Properties["enabled"]) {
-                    $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
-                } else {
-                    $out.tls.enabled = $true
-                }
-            }
-        } else {
-            # 如果没有tls属性，创建tls并添加enabled: true
-            $out.tls = New-Object PSObject
-            $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
-        }
-    }
-}
+# foreach ($out in $mainJson.outbounds) {
+#     if ($out.type -eq "hysteria2") {
+#         # 如果存在tls属性
+#         if ($out.tls) {
+#             # 此时判断是否有enabled: true
+#             if (-not $out.tls.enabled -or $out.tls.enabled -ne $true) {
+#                 # 如果没有enabled或不是true，就添加/设置为true
+#                 if (-not $out.tls.PSObject.Properties["enabled"]) {
+#                     $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
+#                 } else {
+#                     $out.tls.enabled = $true
+#                 }
+#             }
+#         } else {
+#             # 如果没有tls属性，创建tls并添加enabled: true
+#             $out.tls = New-Object PSObject
+#             $out.tls | Add-Member -NotePropertyName "enabled" -NotePropertyValue $true
+#         }
+#     }
+# }
 
 
 
