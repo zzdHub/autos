@@ -71,14 +71,14 @@
       "tag": "select",
       "outbounds": [
         "英国(UK)",
-        "其他地区",
+        "中国(CN)",
         "香港(HK)",
         "新加坡(SG)",
-        "韩国(KR)",
-        "德国(DE)",
-        "中国(CN)",
+        "其他地区",
         "美国(US)",
         "日本(JP)",
+        "韩国(KR)",
+        "德国(DE)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -154,7 +154,7 @@
       "server_port": 23277,
       "tls": {
         "enabled": true,
-        "server_name": "awsjp2.sevenka.top",
+        "server_name": "jprbawsbbb2.jiedddym.com",
         "insecure": true
       },
       "password": "5b988825-d249-46ac-969f-963e66f0ad3d"
@@ -279,7 +279,7 @@
     {
       "type": "vless",
       "tag": "🇯🇵日本-原生01",
-      "server": "64.1yuan.cyou",
+      "server": "929292.1yuan.cyou",
       "server_port": 16319,
       "uuid": "5b988825-d249-46ac-969f-963e66f0ad3d",
       "flow": "xtls-rprx-vision",
@@ -300,7 +300,7 @@
     {
       "type": "vless",
       "tag": "🇩🇪德国（专线）01",
-      "server": "64.1yuan.cyou",
+      "server": "929292.1yuan.cyou",
       "server_port": 21531,
       "uuid": "5b988825-d249-46ac-969f-963e66f0ad3d",
       "flow": "xtls-rprx-vision",
@@ -342,7 +342,7 @@
     {
       "type": "vless",
       "tag": "🇸🇬新加坡-专线01",
-      "server": "64.1yuan.cyou",
+      "server": "929292.1yuan.cyou",
       "server_port": 52353,
       "uuid": "5b988825-d249-46ac-969f-963e66f0ad3d",
       "flow": "xtls-rprx-vision",
@@ -384,7 +384,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧英国-住宅01",
-      "server": "64.1yuan.cyou",
+      "server": "929292.1yuan.cyou",
       "server_port": 34790,
       "uuid": "5b988825-d249-46ac-969f-963e66f0ad3d",
       "flow": "xtls-rprx-vision",
@@ -480,9 +480,15 @@
     },
     {
       "type": "selector",
-      "tag": "其他地区",
+      "tag": "中国(CN)",
       "outbounds": [
-        "使用前先更新订阅"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -508,31 +514,9 @@
     },
     {
       "type": "selector",
-      "tag": "韩国(KR)",
+      "tag": "其他地区",
       "outbounds": [
-        "🇰🇷韩国aws01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国（专线）01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
+        "使用前先更新订阅"
       ],
       "interrupt_exist_connections": true
     },
@@ -555,6 +539,22 @@
         "🇯🇵日本aws高速03",
         "🇯🇵日本-原生01",
         "🇯🇵日本（专线）01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "韩国(KR)",
+      "outbounds": [
+        "🇰🇷韩国aws01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "🇩🇪德国（专线）01"
       ],
       "interrupt_exist_connections": true
     }
