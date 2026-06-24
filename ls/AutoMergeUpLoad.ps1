@@ -48,7 +48,7 @@ $url = $subs[$i]
 }
 # 构造参数数组  -d 参数靠tag 删除节点
 Write-Host "build script parameters....."
-$params = @("-t", $template, "-o", $UnConfig, "-G","-u","sing_box")
+$params = @("-t", $template, "-o", $UnConfig,"-u","sing_box")
 $successSubs | ForEach-Object {
     $params += "-s"
     $params += $_
