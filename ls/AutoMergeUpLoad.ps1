@@ -115,7 +115,7 @@ catch {
 #        }   
 #    }
 # }
-# $mainJson.outbounds = $subJson.outbounds 
+ $mainJson.outbounds = $subJson.outbounds 
 
 # # 最简单的修复
 # foreach ($out in $mainJson.outbounds) {
