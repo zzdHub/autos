@@ -70,15 +70,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "英国(UK)",
+        "德国(DE)",
         "其他地区",
-        "美国(US)",
-        "韩国(KR)",
-        "中国(CN)",
         "香港(HK)",
         "新加坡(SG)",
+        "英国(UK)",
+        "中国(CN)",
+        "美国(US)",
         "日本(JP)",
-        "德国(DE)",
+        "韩国(KR)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -472,9 +472,9 @@
     },
     {
       "type": "selector",
-      "tag": "英国(UK)",
+      "tag": "德国(DE)",
       "outbounds": [
-        "🇬🇧英国-住宅01"
+        "🇩🇪德国（专线）01"
       ],
       "interrupt_exist_connections": true
     },
@@ -483,39 +483,6 @@
       "tag": "其他地区",
       "outbounds": [
         "使用前先更新订阅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国-住宅",
-        "🇺🇸美国住宅-hy2",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "🇰🇷韩国aws01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
-        "🇨🇳香港hkt3-hy2",
-        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -541,6 +508,39 @@
     },
     {
       "type": "selector",
+      "tag": "英国(UK)",
+      "outbounds": [
+        "🇬🇧英国-住宅01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "中国(CN)",
+      "outbounds": [
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港-专线01",
+        "🇨🇳香港hkt3-hy2",
+        "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国-住宅",
+        "🇺🇸美国住宅-hy2",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "日本(JP)",
       "outbounds": [
         "🇯🇵日本aws高速02",
@@ -552,9 +552,9 @@
     },
     {
       "type": "selector",
-      "tag": "德国(DE)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "🇩🇪德国（专线）01"
+        "🇰🇷韩国aws01"
       ],
       "interrupt_exist_connections": true
     }
