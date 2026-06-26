@@ -70,15 +70,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "德国(DE)",
         "其他地区",
-        "香港(HK)",
-        "新加坡(SG)",
-        "英国(UK)",
         "中国(CN)",
         "美国(US)",
+        "德国(DE)",
+        "香港(HK)",
+        "新加坡(SG)",
         "日本(JP)",
         "韩国(KR)",
+        "英国(UK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -257,9 +257,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇳香港-专线01",
-      "server": "919191.1yuan.cyou",
-      "server_port": 42896,
+      "tag": "🇭🇰香港-流媒体",
+      "server": "hkakak.jiedddym.com",
+      "server_port": 27898,
       "uuid": "5b988825-d249-46ac-969f-963e66f0ad3d",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -472,45 +472,9 @@
     },
     {
       "type": "selector",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国（专线）01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "其他地区",
       "outbounds": [
         "使用前先更新订阅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "🇭🇰香港aws高速01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡aws高速02",
-        "🇸🇬新加坡aws高速03",
-        "新加坡-媒体流01",
-        "🇸🇬新加坡-专线01",
-        "🇸🇬新加坡-hy2"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "英国(UK)",
-      "outbounds": [
-        "🇬🇧英国-住宅01"
       ],
       "interrupt_exist_connections": true
     },
@@ -522,7 +486,6 @@
         "🇨🇳香港htk高速01",
         "🇨🇳香港hkb家宽01",
         "🇨🇳台湾-住宅02",
-        "🇨🇳香港-专线01",
         "🇨🇳香港hkt3-hy2",
         "🇨🇳香港hkt4-hy2"
       ],
@@ -536,6 +499,35 @@
         "🇺🇸美国住宅-hy2",
         "🇺🇸美国迈阿密-hy2",
         "🇺🇸美国拉斯维加斯-hy2"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "🇩🇪德国（专线）01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港-流媒体"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "新加坡(SG)",
+      "outbounds": [
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "新加坡-媒体流01",
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -555,6 +547,14 @@
       "tag": "韩国(KR)",
       "outbounds": [
         "🇰🇷韩国aws01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "英国(UK)",
+      "outbounds": [
+        "🇬🇧英国-住宅01"
       ],
       "interrupt_exist_connections": true
     }
