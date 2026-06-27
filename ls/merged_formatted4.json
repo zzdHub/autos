@@ -75,9 +75,9 @@
         "其他地区",
         "中国(CN)",
         "美国(US)",
+        "香港(HK)",
         "新加坡(SG)",
         "日本(JP)",
-        "香港(HK)",
         "韩国(KR)",
         "direct"
       ],
@@ -520,6 +520,15 @@
     },
     {
       "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港-流媒体"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "新加坡(SG)",
       "outbounds": [
         "🇸🇬新加坡aws高速02",
@@ -538,15 +547,6 @@
         "🇯🇵日本aws高速03",
         "🇯🇵日本-原生01",
         "🇯🇵日本（专线）01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "香港(HK)",
-      "outbounds": [
-        "🇭🇰香港aws高速01",
-        "🇭🇰香港-流媒体"
       ],
       "interrupt_exist_connections": true
     },
