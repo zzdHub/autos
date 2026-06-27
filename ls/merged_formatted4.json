@@ -70,15 +70,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
-        "韩国(KR)",
         "德国(DE)",
-        "中国(CN)",
-        "美国(US)",
-        "香港(HK)",
-        "日本(JP)",
         "英国(UK)",
         "其他地区",
+        "中国(CN)",
+        "美国(US)",
+        "新加坡(SG)",
+        "日本(JP)",
+        "香港(HK)",
+        "韩国(KR)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -472,29 +472,25 @@
     },
     {
       "type": "selector",
-      "tag": "新加坡(SG)",
-      "outbounds": [
-        "🇸🇬新加坡aws高速02",
-        "🇸🇬新加坡aws高速03",
-        "新加坡-媒体流01",
-        "🇸🇬新加坡-专线01",
-        "🇸🇬新加坡-hy2"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "🇰🇷韩国aws01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "德国(DE)",
       "outbounds": [
         "🇩🇪德国（专线）01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "英国(UK)",
+      "outbounds": [
+        "🇬🇧英国-住宅01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "其他地区",
+      "outbounds": [
+        "使用前先更新订阅"
       ],
       "interrupt_exist_connections": true
     },
@@ -524,10 +520,13 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "🇭🇰香港aws高速01",
-        "🇭🇰香港-流媒体"
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "新加坡-媒体流01",
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -544,17 +543,18 @@
     },
     {
       "type": "selector",
-      "tag": "英国(UK)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "🇬🇧英国-住宅01"
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港-流媒体"
       ],
       "interrupt_exist_connections": true
     },
     {
       "type": "selector",
-      "tag": "其他地区",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "使用前先更新订阅"
+        "🇰🇷韩国aws01"
       ],
       "interrupt_exist_connections": true
     }
