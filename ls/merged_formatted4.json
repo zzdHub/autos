@@ -71,14 +71,14 @@
       "tag": "select",
       "outbounds": [
         "香港(HK)",
-        "英国(UK)",
-        "其他地区",
-        "美国(US)",
         "新加坡(SG)",
         "日本(JP)",
+        "英国(UK)",
         "韩国(KR)",
         "德国(DE)",
+        "其他地区",
         "中国(CN)",
+        "美国(US)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -90,11 +90,11 @@
     {
       "type": "anytls",
       "tag": "🇨🇳台湾-住宅",
-      "server": "aatw.coffee1.xyz",
+      "server": "aktwa.jiedddym.com",
       "server_port": 30096,
       "tls": {
         "enabled": true,
-        "server_name": "aatw.coffee1.xyz",
+        "server_name": "aktwa.jiedddym.com",
         "insecure": true
       },
       "password": "5b988825-d249-46ac-969f-963e66f0ad3d"
@@ -471,33 +471,6 @@
     },
     {
       "type": "selector",
-      "tag": "英国(UK)",
-      "outbounds": [
-        "🇬🇧英国-住宅01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "其他地区",
-      "outbounds": [
-        "使用前先更新订阅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "美国(US)",
-      "outbounds": [
-        "🇺🇸美国-住宅",
-        "🇺🇸美国住宅-hy2",
-        "🇺🇸美国迈阿密-hy2",
-        "🇺🇸美国拉斯维加斯-hy2"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "新加坡(SG)",
       "outbounds": [
         "🇸🇬新加坡aws高速02",
@@ -521,6 +494,14 @@
     },
     {
       "type": "selector",
+      "tag": "英国(UK)",
+      "outbounds": [
+        "🇬🇧英国-住宅01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "韩国(KR)",
       "outbounds": [
         "🇰🇷韩国aws01"
@@ -537,6 +518,14 @@
     },
     {
       "type": "selector",
+      "tag": "其他地区",
+      "outbounds": [
+        "使用前先更新订阅"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "中国(CN)",
       "outbounds": [
         "🇨🇳台湾-住宅",
@@ -544,6 +533,17 @@
         "🇨🇳香港hkb家宽01",
         "🇨🇳台湾-住宅02",
         "🇨🇳香港hkt4-hy2"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "美国(US)",
+      "outbounds": [
+        "🇺🇸美国-住宅",
+        "🇺🇸美国住宅-hy2",
+        "🇺🇸美国迈阿密-hy2",
+        "🇺🇸美国拉斯维加斯-hy2"
       ],
       "interrupt_exist_connections": true
     }
