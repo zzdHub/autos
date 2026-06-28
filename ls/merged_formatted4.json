@@ -70,15 +70,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "新加坡(SG)",
-        "韩国(KR)",
-        "英国(UK)",
-        "中国(CN)",
-        "美国(US)",
         "香港(HK)",
-        "日本(JP)",
-        "德国(DE)",
+        "英国(UK)",
         "其他地区",
+        "美国(US)",
+        "新加坡(SG)",
+        "日本(JP)",
+        "韩国(KR)",
+        "德国(DE)",
+        "中国(CN)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -462,21 +462,10 @@
     },
     {
       "type": "selector",
-      "tag": "新加坡(SG)",
+      "tag": "香港(HK)",
       "outbounds": [
-        "🇸🇬新加坡aws高速02",
-        "🇸🇬新加坡aws高速03",
-        "新加坡-媒体流01",
-        "🇸🇬新加坡-专线01",
-        "🇸🇬新加坡-hy2"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "🇰🇷韩国aws01"
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港-流媒体"
       ],
       "interrupt_exist_connections": true
     },
@@ -490,13 +479,9 @@
     },
     {
       "type": "selector",
-      "tag": "中国(CN)",
+      "tag": "其他地区",
       "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港hkt4-hy2"
+        "使用前先更新订阅"
       ],
       "interrupt_exist_connections": true
     },
@@ -513,10 +498,13 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
+      "tag": "新加坡(SG)",
       "outbounds": [
-        "🇭🇰香港aws高速01",
-        "🇭🇰香港-流媒体"
+        "🇸🇬新加坡aws高速02",
+        "🇸🇬新加坡aws高速03",
+        "新加坡-媒体流01",
+        "🇸🇬新加坡-专线01",
+        "🇸🇬新加坡-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -533,6 +521,14 @@
     },
     {
       "type": "selector",
+      "tag": "韩国(KR)",
+      "outbounds": [
+        "🇰🇷韩国aws01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
       "tag": "德国(DE)",
       "outbounds": [
         "🇩🇪德国（专线）01"
@@ -541,9 +537,13 @@
     },
     {
       "type": "selector",
-      "tag": "其他地区",
+      "tag": "中国(CN)",
       "outbounds": [
-        "使用前先更新订阅"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true
     }
