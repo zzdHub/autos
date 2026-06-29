@@ -72,13 +72,13 @@
       "outbounds": [
         "中国(CN)",
         "新加坡(SG)",
+        "日本(JP)",
         "韩国(KR)",
-        "英国(UK)",
         "其他地区",
         "美国(US)",
         "香港(HK)",
-        "日本(JP)",
         "德国(DE)",
+        "英国(UK)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -486,17 +486,20 @@
     },
     {
       "type": "selector",
-      "tag": "韩国(KR)",
+      "tag": "日本(JP)",
       "outbounds": [
-        "🇰🇷韩国aws01"
+        "🇯🇵日本aws高速02",
+        "🇯🇵日本aws高速03",
+        "🇯🇵日本-原生01",
+        "🇯🇵日本（专线）01"
       ],
       "interrupt_exist_connections": true
     },
     {
       "type": "selector",
-      "tag": "英国(UK)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "🇬🇧英国-住宅01"
+        "🇰🇷韩国aws01"
       ],
       "interrupt_exist_connections": true
     },
@@ -530,20 +533,17 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "德国(DE)",
       "outbounds": [
-        "🇯🇵日本aws高速02",
-        "🇯🇵日本aws高速03",
-        "🇯🇵日本-原生01",
-        "🇯🇵日本（专线）01"
+        "🇩🇪德国（专线）01"
       ],
       "interrupt_exist_connections": true
     },
     {
       "type": "selector",
-      "tag": "德国(DE)",
+      "tag": "英国(UK)",
       "outbounds": [
-        "🇩🇪德国（专线）01"
+        "🇬🇧英国-住宅01"
       ],
       "interrupt_exist_connections": true
     }
