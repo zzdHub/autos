@@ -70,15 +70,15 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "香港(HK)",
-        "新加坡(SG)",
-        "日本(JP)",
-        "英国(UK)",
-        "韩国(KR)",
-        "德国(DE)",
-        "其他地区",
         "中国(CN)",
+        "新加坡(SG)",
+        "韩国(KR)",
+        "英国(UK)",
+        "其他地区",
         "美国(US)",
+        "香港(HK)",
+        "日本(JP)",
+        "德国(DE)",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -462,10 +462,13 @@
     },
     {
       "type": "selector",
-      "tag": "香港(HK)",
+      "tag": "中国(CN)",
       "outbounds": [
-        "🇭🇰香港aws高速01",
-        "🇭🇰香港-流媒体"
+        "🇨🇳台湾-住宅",
+        "🇨🇳香港htk高速01",
+        "🇨🇳香港hkb家宽01",
+        "🇨🇳台湾-住宅02",
+        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -483,12 +486,9 @@
     },
     {
       "type": "selector",
-      "tag": "日本(JP)",
+      "tag": "韩国(KR)",
       "outbounds": [
-        "🇯🇵日本aws高速02",
-        "🇯🇵日本aws高速03",
-        "🇯🇵日本-原生01",
-        "🇯🇵日本（专线）01"
+        "🇰🇷韩国aws01"
       ],
       "interrupt_exist_connections": true
     },
@@ -502,37 +502,9 @@
     },
     {
       "type": "selector",
-      "tag": "韩国(KR)",
-      "outbounds": [
-        "🇰🇷韩国aws01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "德国(DE)",
-      "outbounds": [
-        "🇩🇪德国（专线）01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
       "tag": "其他地区",
       "outbounds": [
         "使用前先更新订阅"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "selector",
-      "tag": "中国(CN)",
-      "outbounds": [
-        "🇨🇳台湾-住宅",
-        "🇨🇳香港htk高速01",
-        "🇨🇳香港hkb家宽01",
-        "🇨🇳台湾-住宅02",
-        "🇨🇳香港hkt4-hy2"
       ],
       "interrupt_exist_connections": true
     },
@@ -544,6 +516,34 @@
         "🇺🇸美国住宅-hy2",
         "🇺🇸美国迈阿密-hy2",
         "🇺🇸美国拉斯维加斯-hy2"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "香港(HK)",
+      "outbounds": [
+        "🇭🇰香港aws高速01",
+        "🇭🇰香港-流媒体"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "日本(JP)",
+      "outbounds": [
+        "🇯🇵日本aws高速02",
+        "🇯🇵日本aws高速03",
+        "🇯🇵日本-原生01",
+        "🇯🇵日本（专线）01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "selector",
+      "tag": "德国(DE)",
+      "outbounds": [
+        "🇩🇪德国（专线）01"
       ],
       "interrupt_exist_connections": true
     }
