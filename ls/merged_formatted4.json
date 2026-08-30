@@ -55,6 +55,9 @@
       "outbounds": [
         "香港🇭🇰",
         "香港🇭🇰1-1电信优化",
+        "新加坡🇸🇬2-2电信优化",
+        "新加坡🇸🇬1-1电信优化",
+        "新加坡🇸🇬1解锁",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -84,6 +87,43 @@
     "tls": {
       "enabled": true,
       "server_name": "woxg.jdsyym.xyz",
+      "insecure": true
+    }
+  },
+
+    {
+    "tag": "新加坡🇸🇬1解锁",
+    "type": "anytls",
+    "server": "xiaoqi.l8inn.com",
+    "server_port": 26630,
+    "password": "1410466f-26da-472a-b47f-518ea4756673",
+    "tls": {
+      "enabled": true,
+      "server_name": "mpvideo.qpic.cn",
+      "insecure": true
+    }
+  },
+  {
+    "tag": "新加坡🇸🇬1-1电信优化",
+    "type": "anytls",
+    "server": "wyy8.l8inn.com",
+    "server_port": 26631,
+    "password": "1410466f-26da-472a-b47f-518ea4756673",
+    "tls": {
+      "enabled": true,
+      "server_name": "jxjp.jdsyym.xyz",
+      "insecure": true
+    }
+  },
+  {
+    "tag": "新加坡🇸🇬2-2电信优化",
+    "type": "anytls",
+    "server": "wyy8.l8inn.com",
+    "server_port": 26639,
+    "password": "1410466f-26da-472a-b47f-518ea4756673",
+    "tls": {
+      "enabled": true,
+      "server_name": "xqxjp.jdsyym.xyz",
       "insecure": true
     }
   }
