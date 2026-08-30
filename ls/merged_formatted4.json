@@ -53,6 +53,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
+        "香港🇭🇰",
+        "香港🇭🇰1-1电信优化",
         "direct"
       ],
       "interrupt_exist_connections": true
@@ -60,7 +62,31 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+    "tag": "香港🇭🇰",
+    "type": "anytls",
+    "server": "wyy5.l8inn.com",
+    "server_port": 39750,
+    "password": "1410466f-26da-472a-b47f-518ea4756673",
+    "tls": {
+      "enabled": true,
+      "server_name": "mpvideo.qpic.cn",
+      "insecure": true
     }
+  },
+  {
+    "tag": "香港🇭🇰1-1电信优化",
+    "type": "anytls",
+    "server": "wyy8.l8inn.com",
+    "server_port": 29756,
+    "password": "1410466f-26da-472a-b47f-518ea4756673",
+    "tls": {
+      "enabled": true,
+      "server_name": "woxg.jdsyym.xyz",
+      "insecure": true
+    }
+  }
   ],
   "route": {
     "rules": [
