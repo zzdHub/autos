@@ -13,7 +13,7 @@
       {
         "tag": "Remote-DNS",
         "type": "tls",
-        "server": "dns.google",
+        "server": "8.8.8.8",
         "domain_resolver": "Local-DNS",
         "detour": "select"
       }
@@ -35,8 +35,7 @@
       }
     ],
     "final": "Remote-DNS",
-    "independent_cache": true,
-     "strategy": "ipv4_only"
+    "independent_cache": true
   },
   "inbounds": [
     {
