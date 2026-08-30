@@ -15,6 +15,7 @@
         "type": "tls",
         "server": "dns.google",
         "domain_resolver": "Local-DNS",
+        "strategy": "ipv4_only",
         "detour": "select"
       }
     ],
