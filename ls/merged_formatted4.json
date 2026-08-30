@@ -45,24 +45,7 @@
       "address": "172.18.0.1/30",
       "auto_route": true,
       "strict_route": true,
-      "include_package": [
-        "org.telegram.messenger",
-        "com.ichi2.anki",
-        "app.revanced.android.youtube",
-        "com.openai.chatgpt",
-        "com.android.vending",
-        "com.foxdebug.acodefree",
-        "com.android.chrome",
-        "com.google.android.gms",
-        "com.google.android.gsf",
-        "com.google.android.tts",
-        "app.revanced.android.gms",
-        "com.google.android.apps.translate",
-        "com.innologica.inoreader",
-        "com.theotino.chinadaily",
-        "com.twitter.android"
-      ],
-      "stack": "system"
+      "stack": "mixed"
     }
   ],
   "outbounds": [
