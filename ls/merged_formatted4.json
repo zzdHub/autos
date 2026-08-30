@@ -15,7 +15,6 @@
         "type": "tls",
         "server": "dns.google",
         "domain_resolver": "Local-DNS",
-        "strategy": "ipv4_only",
         "detour": "select"
       }
     ],
@@ -36,7 +35,8 @@
       }
     ],
     "final": "Remote-DNS",
-    "independent_cache": true
+    "independent_cache": true,
+     "strategy": "ipv4_only"
   },
   "inbounds": [
     {
